@@ -1,11 +1,36 @@
 import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { sidebarOptions } from './sidebarOptions'
+import './styles.css'
+
 
 const Main = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const [activeContent, setActiveContent] = useState(sidebarOptions[0]?.content || '')
+  const [activeContent, setActiveContent] = useState('')
   const [isDarkMode, setIsDarkMode] = useState(false)
+
+  const renderSubmenu = (subItens: any[]) => (
+    <ul className="ml-4 space-y-2">
+      {subItens.map((subItem, index) => (
+        <li
+          key={index}
+          className="flex items-center space-x-3 cursor-pointer"
+          onClick={() => {
+            setActiveContent(subItem.content)
+            setIsSidebarOpen(false)
+          }}
+        >
+          <img
+            src={subItem.icon}
+            alt={subItem.title}
+            className={`w-5 h-5 ${isDarkMode ? 'filter brightness-0 invert' : ''}`}
+          />
+          <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>{subItem.title}</span>
+        </li>
+      ))}
+    </ul>
+  )
 
   return (
     <div className={`${isDarkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'} flex min-h-screen`}>
@@ -23,21 +48,25 @@ const Main = () => {
           ✖
         </button>
         <ul className="mt-4 space-y-4 p-4">
-          {sidebarOptions.map((option) => (
-            <li
-              key={option.title}
-              className="flex items-center space-x-3 cursor-pointer"
-              onClick={() => {
-                setActiveContent(option.content)
-                setIsSidebarOpen(false)
-              }}
-            >
-              <img
-                src={option.icon}
-                alt={option.title}
-                className={`w-6 h-6 ${isDarkMode ? 'filter brightness-0 invert' : ''}`}
-              />
-              <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>{option.title}</span>
+          {sidebarOptions.map((option, index) => (
+            <li key={index}>
+              <div
+                className="flex items-center space-x-3 cursor-pointer"
+                onClick={() => {
+                  if (!option.subItens) {
+                    setActiveContent(option.subItens || '')
+                    setIsSidebarOpen(false)
+                  }
+                }}
+              >
+                <img
+                  src={option.icon}
+                  alt={option.title}
+                  className={`w-6 h-6 ${isDarkMode ? 'filter brightness-0 invert' : ''}`}
+                />
+                <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>{option.title}</span>
+              </div>
+              {option.subItens && renderSubmenu(option.subItens)}
             </li>
           ))}
         </ul>
@@ -68,9 +97,11 @@ const Main = () => {
           } p-6 rounded-lg shadow-md`}
         >
           {activeContent ? (
-            <ReactMarkdown>
-              {activeContent}
-            </ReactMarkdown>
+            <div className="markdown">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {activeContent}
+              </ReactMarkdown>
+            </div>            
           ) : (
             <p className="text-lg text-gray-500">
               Selecione uma opção no menu para ver o conteúdo.

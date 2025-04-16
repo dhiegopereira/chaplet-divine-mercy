@@ -1,8 +1,12 @@
 export const sidebarOptions = [
-  {
-    title: "Passo-a-passo do Santo Terço",
+  { 
+    title: "Terço da Divina Misericórdia", 
     icon: "./cristianismo.png",
-    content: `
+    subItens: [
+      {
+        title: "Passo-a-passo do Santo Terço",
+        icon: "./cristianismo.png",
+        content: `
 ## **Para rezar o terço, você deve seguir os seguintes passos**: 
    
 **1.** Segurando o Crucifixo, fazer o Sinal da Cruz e em seguida rezar o Credo.
@@ -16,13 +20,11 @@ export const sidebarOptions = [
 **5.** Rezar os Mistérios do Terço para cada dezena.
 
     `
-  },
-    {
-      title: "Rezar um terço",
-      icon: "./cristianismo.png",
-      content: `
-
-
+      },
+      {
+        title: "Rezar um terço",
+        icon: "./cristianismo.png",
+        content: `
 ## **1. Sinal da Cruz** 
 Em nome do Pai, do Filho e do Espírito Santo. Amém.
 
@@ -89,11 +91,12 @@ Rogai por nós, Santa Mãe de Deus,
 para que sejamos dignos das promessas de Cristo. Amém.
 
 ---`,
-    },
-    {
-      title: "Mistérios Gozosos (Segunda e Sábado)",
-      icon: "./cristianismo.png",
-      content: `### **1. A Anunciação do Anjo a Maria**  
+      },
+      {
+        title: "Mistérios Gozosos (Segunda e Sábado)",
+        icon: "./cristianismo.png",
+        content: `
+### **1. A Anunciação do Anjo a Maria**  
 📖 **Leitura: Lucas 1,26-38**
 
 > No sexto mês, o anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um homem chamado José, da casa de Davi; e o nome da virgem era Maria.  
@@ -180,11 +183,12 @@ Contemple a obediência de Maria e José à Lei. Simeão reconhece a luz do mund
 Medite sobre a angústia de Maria e José ao perceberem a ausência de Jesus, e a alegria do reencontro. Reflita sobre os momentos em que Jesus parece “ausente” e renove seu desejo de estar sempre perto d’Ele.
 
 ---`,
-    },
-    {
-      title: "Mistérios Dolorosos (Terça e Sexta)",
-      icon: "./cristianismo.png",
-      content: `### **1. A Agonia de Jesus no Horto das Oliveiras**  
+      },
+      {
+        title: "Mistérios Dolorosos (Terça e Sexta)",
+        icon: "./cristianismo.png",
+        content: `
+### **1. A Agonia de Jesus no Horto das Oliveiras**  
 📖 **Leitura: Mateus 26,36-46**
 
 > Em seguida, Jesus foi com eles a um lugar chamado Getsêmani e disse aos discípulos: “Sentai-vos aqui, enquanto eu vou ali orar”.  
@@ -261,11 +265,12 @@ Jesus, mesmo exausto, carrega sua cruz até o fim. Reflita sobre as suas cruzes 
 Contemple o amor de Jesus que se entrega até a morte por sua salvação. Medite sobre o poder do perdão e da entrega total. Reze para aprender a amar como Ele amou.
 
 ---`,
-    },
-    {
-      title: "Mistérios Gloriosos (Quarta e Domingo)",
-      icon: "./cristianismo.png",
-      content: `### **1. A Ressurreição de Jesus**  
+      },
+      {
+        title: "Mistérios Gloriosos (Quarta e Domingo)",
+        icon: "./cristianismo.png",
+        content: `
+### **1. A Ressurreição de Jesus**  
 📖 **Leitura: Mateus 28,1-10**
 
 > Depois do sábado, ao amanhecer do primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro.  
@@ -340,11 +345,12 @@ Contemple Maria glorificada como Rainha dos Céus. Ela é mãe, intercessora e m
 
 ---
 `,
-    },
-    {
-      title: "Mistérios Luminosos (Quinta-feira)",
-      icon: "./cristianismo.png",
-      content: `### **1. Batismo de Jesus no Jordão**  
+      },
+      {
+        title: "Mistérios Luminosos (Quinta-feira)",
+        icon: "./cristianismo.png",
+        content: `
+### **1. Batismo de Jesus no Jordão**  
 📖 **Leitura: Mateus 3,13-17**
 
 > Então Jesus veio da Galileia ao Jordão até João, para ser batizado por ele.  
@@ -416,5 +422,168 @@ Contemple a glória de Cristo revelada aos discípulos. Reflita sobre a luz de J
 
 🕊 **Meditar:**  
 Contemple o dom da Eucaristia, presença real de Jesus entre nós. Reflita sobre a profundidade desse sacramento e seu poder de nos transformar. Reze por amor e reverência à Santa Missa e comunhão frequente.`,
-    },
-  ]
+      },
+    ],
+  },
+  {
+    title: "Deus existe?",
+    icon: "./cristianismo.png",
+    subItens: [
+      {
+        title: "🧠 Resumo dos principais argumentos",
+        icon: "./cristianismo.png",
+        content: `
+### 🧠 **Resumo dos principais argumentos**
+
+#### 🧩 **1. Filosófico:**
+- A pergunta “quem criou Deus?” é considerada filosoficamente **equivocada**, pois supõe que Deus seja um ente dentro da cadeia de causa e efeito.
+- Desde Parmênides, afirma-se: **“Ex nihilo nihil fit”** — do nada, nada se faz.
+- Para haver algo, **tem que haver um ser necessário**, eterno, sem início, **imutável, atemporal e não espacial**.
+- Argumenta-se que se tudo tivesse vindo do nada ou de uma sequência infinita de causas, isso levaria a um absurdo lógico — chamado de **regresso infinito**.
+- **Aristóteles** já falava da necessidade de uma **“causa primeira”**, um motor imóvel.
+
+#### 🔬 **2. Científico:**
+- Antes do Big Bang não havia **tempo, espaço ou gravidade** — ou seja, **nada absoluto**.
+- O método científico exige que algo seja **falseável, observável, mensurável**, o que não se aplica à hipótese de que “o universo veio do nada”.
+- Mesmo cientistas que admitem não saber o que causou o Big Bang reconhecem que **houve uma causa**, mesmo sem saber o que é.
+
+#### ✝️ **3. Teológico:**
+- O Deus bíblico possui atributos como:
+  - **Onipresença** (presente em todos os lugares),
+  - **Onipotência** (todo-poderoso),
+  - **Onisciência** (todo-conhecimento),
+  - E é **imutável, eterno e autoexistente**.
+- Argumenta-se que o homem tem em si um “vazio com forma de Deus” (influência de Carl Jung e Carl Rogers).
+- A doutrina do **Imago Dei** (imagem de Deus) indica que há em nós características que refletem o Criador — como o amor pelos filhos, desejo de justiça, busca pelo sagrado.
+- **Paradoxo** ≠ contradição. Deus pode ser paradoxal (como em muitas questões da física quântica), mas não contraditório.
+
+---
+
+### 📚 **Pessoas/Figuras mencionadas para estudar**
+
+| Nome                   | Quem é? | Contribuições relevantes |
+|------------------------|---------|---------------------------|
+| **Parmênides**         | Filósofo pré-socrático | “Nada vem do nada” (Ex nihilo nihil fit) |
+| **Aristóteles**        | Filósofo grego | “Motor imóvel”, causa primeira |
+| **Francis Bacon**      | Filósofo e cientista inglês | Criador do método científico moderno |
+| **John Stuart Mill**   | Filósofo inglês | Reformulador do método indutivo |
+| **Carl Jung**          | Psicólogo suíço | Conceito do “inconsciente coletivo”, busca do sagrado |
+| **Carl Rogers**        | Psicólogo humanista | Defendeu a importância da autorrealização e espiritualidade |
+| **Fernando Pessoa**    | Poeta português | Citação mencionada: “besta fera, cadáver adiado que procria” |
+| **Ellen White**        | Escritora adventista | Escreveu sobre o amor de Deus compreendido na paternidade |
+
+---
+
+### 💬 **Frases e ideias de impacto para debates**
+
+- “Se do nada, nada se faz, então algo sempre existiu.”
+- “A ciência exige observação e repetição. Algo surgir do nada não é observável, nem falseável.”
+- “Se não aceitamos que um tigre apareça do nada, por que aceitar que o universo apareceu do nada?”
+- “A pergunta ‘Quem criou Deus?’ só desloca o problema para trás, em um regresso infinito.”
+- “A ausência de Deus no inferno é ausência relacional, não espacial.”
+- “O ser humano busca sentido, mesmo quando nega Deus.”
+
+---
+`     },
+      {
+        title: "🧪 O que é uma teoria científica?",
+        icon: "./cristianismo.png",
+        content: `
+### 🧪 O que é uma teoria científica?
+Na ciência, uma **teoria científica** não é um "achismo" ou "hipótese sem provas", como muita gente pensa. Ela precisa ter:
+
+1. **Base em evidências empíricas**;
+2. **Ser testável e falseável** (ou seja, deve ser possível provar que ela está errada, pelo menos em princípio);
+3. **Explicar um conjunto amplo de fenômenos observados**;
+4. **Gerar previsões que possam ser testadas no futuro**;
+5. **Ser consistente com outras teorias bem estabelecidas ou fornecer uma base para superá-las**.
+
+---
+
+### 🌌 Como surgiu a Teoria do Big Bang?
+A teoria do Big Bang **não surgiu do nada**. Ela foi proposta para **explicar fenômenos reais e observáveis** do universo. Veja a sequência:
+
+#### 🔭 1. **Observação da Expansão do Universo**
+- Em 1929, **Edwin Hubble** observou que as galáxias estão se afastando umas das outras.
+- Quanto mais distantes, mais rápido se afastam — **Desvio para o vermelho (Redshift)**.
+- Isso sugeriu que o universo está **em expansão**.
+
+#### 🧮 2. **Modelos Matemáticos da Relatividade**
+- **Einstein**, com sua **Teoria da Relatividade Geral (1915)**, permitiu modelar matematicamente o comportamento do universo.
+- **Georges Lemaître**, um padre e físico belga, propôs que o universo teve origem em um “**átomo primordial**”.
+
+#### 🌐 3. **Evidência Observacional: Radiação Cósmica de Fundo (1965)**
+- Arno Penzias e Robert Wilson detectaram uma radiação de micro-ondas vinda de todas as direções do espaço — **Radiação Cósmica de Fundo (CMB)**.
+- Isso foi previsto pela teoria do Big Bang como “eco” do calor remanescente do início do universo.
+- É uma das **principais confirmações** da teoria.
+
+#### 💥 4. **Abundância de elementos leves**
+- A teoria prevê com precisão a proporção de elementos como **hidrogênio, hélio e lítio** no universo — e isso **bate com o que vemos**.
+
+---
+
+### 🤔 Mas por que dizem que ela não é falseável ou observável?
+
+Na verdade, **parte da teoria** é falseável e observável — especialmente a **expansão do universo, a radiação de fundo e a composição química**.
+
+Porém, **o momento exato do “nada” virando “algo” (t = 0)** **não é observável**, porque:
+
+- As leis da física **quebram** nesse ponto (a chamada **singularidade**).
+- Não temos tecnologia para “ver” antes de 10⁻⁴³ segundos após o Big Bang.
+- É como tentar ver dentro de um buraco negro — nossas equações não funcionam direito lá.
+
+Ou seja:
+
+🔹 **O início absoluto (t=0)** → **especulativo, filosófico/metafísico**.  
+🔹 **O que veio depois (t > 10⁻⁴³ s)** → **cientificamente testável e confirmado por dados**.
+
+---
+
+### ✅ Conclusão
+A Teoria do Big Bang **é científica** porque:
+- Ela **explica fenômenos observáveis** como a expansão do universo e a radiação de fundo;
+- **Gera previsões confirmadas** (como a distribuição de galáxias e abundância de elementos);
+- Mas **o instante inicial (a criação do universo em si)** não é diretamente observável nem falseável com a ciência atual — e é aí que entram debates **filosóficos e teológicos**.
+
+---
+
+### 🎯 **A ciência pode estudar o universo *depois* que ele começou, mas não pode afirmar com certeza como ou por que ele começou.**
+
+---
+
+### 🔍 Então o que acontece?
+
+1. **Alguns cientistas assumem** que “algo” aconteceu espontaneamente — mas **isso não é ciência, é especulação filosófica** dentro da ciência.
+   
+2. **Outros admitem** que há uma **limitação epistêmica** (limite do conhecimento humano) e preferem **não afirmar nada sobre a origem**.
+
+3. **Já os teístas (como você está se preparando para argumentar)** dizem:  
+   > “Se não pode vir do nada, e se houve um começo, então é mais lógico considerar uma **Causa Primeira Inteligente** — Deus.”
+
+---
+
+### ⚖️ Contradição para o lado ateísta:
+Se o ateu diz:
+- “Acredito no Big Bang como começo do universo”
+- E “A ciência explica tudo”
+
+...então ele se contradiz, porque **o próprio início do Big Bang não é explicável cientificamente** (não é observável, nem falseável, nem testável).
+
+---
+
+### ✝️ Já a visão teísta...
+...assume a **existência de uma causa necessária**, **atemporal** e **não-material** — exatamente as qualidades atribuídas a Deus nas tradições filosóficas e religiosas (como Tomás de Aquino, Aristóteles, etc.).
+
+---
+
+### 💡 Em um debate, você pode dizer:
+
+> “A origem do universo não pode ser explicada por métodos científicos tradicionais. Se tudo teve um começo, e do nada nada se faz, então é mais lógico supor que houve uma Causa Primeira — e essa Causa tem características que se alinham com o conceito de Deus. A negação dessa possibilidade é tão filosófica quanto a sua aceitação.”
+
+---
+
+`
+      },
+    ]
+  }
+]
