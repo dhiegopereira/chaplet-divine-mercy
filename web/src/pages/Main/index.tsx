@@ -11,11 +11,6 @@ type Post = {
     updatedAt: Date;
 }
 
-// Função para carregar posts do localStorage
-const loadPosts = (): Post[] => {
-  const storedPosts = localStorage.getItem('posts')
-  return storedPosts ? JSON.parse(storedPosts) : []
-}
 
 // Função para salvar posts no localStorage
 const savePosts = (posts: Post[]) => {
@@ -36,19 +31,65 @@ const generatePassword = (): string => {
   return `${h1}${m1}${h2}${m2}` // Ex: "8339"
 }
 
+const PasswordModal = ({
+  title,
+  onCancel,
+  onSubmit,
+  passwordInput,
+  setPasswordInput,
+}: {
+  title: string;
+  onCancel: () => void;
+  onSubmit: () => void;
+  passwordInput: string;
+  setPasswordInput: (value: string) => void;
+}) => {
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div className="p-6 rounded-lg shadow-lg w-full max-w-lg bg-white text-gray-900">
+        <h2 className="text-xl font-bold mb-4">{title}</h2>
+        <input
+          type="password"
+          placeholder="Senha"
+          value={passwordInput}
+          onChange={(e) => setPasswordInput(e.target.value)}
+          className="block w-full p-2 mb-4 rounded-md bg-gray-200 text-gray-800 placeholder-gray-500"
+        />
+        <div className="flex justify-end">
+          <button
+            onClick={onCancel}
+            className="p-2 bg-red-600 hover:bg-red-500 text-white rounded-md transition-colors duration-300 mr-2"
+          >
+            Cancelar
+          </button>
+          <button
+            onClick={onSubmit}
+            className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md transition-colors duration-300"
+          >
+            Validar Senha
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Main = () => {
   const [posts, setPosts] = useState<Post[]>([])
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedPost, setSelectedPost] = useState<Post | null>(null)
   const [newPost, setNewPost] = useState({ title: '', description: '', contentHtml: '' })
-  const [isModalOpen, setIsModalOpen] = useState(false)
   const [passwordInput, setPasswordInput] = useState('')
-  const [isPasswordValid, setIsPasswordValid] = useState(false)
-  const [postToDelete, setPostToDelete] = useState<number | null>(null); // Novo estado para armazenar o ID do post a ser deletado
-  const [isEditModalOpen, setIsEditModalOpen] = useState(false); // Estado para o modal de edição
-  const [postToEdit, setPostToEdit] = useState<Post | null>(null); // Estado para armazenar o post a ser editado
-  const [isPasswordValidForEdit, setIsPasswordValidForEdit] = useState(false); // Estado para validar senha antes de editar
+  const [postToDelete, setPostToDelete] = useState<number | null>(null)
+  const [postToEdit, setPostToEdit] = useState<Post | null>(null)
+
+  const [isPasswordModalForNewPostOpen, setIsPasswordModalForNewPostOpen] = useState(false)
+  const [isPasswordModalForEditOpen, setIsPasswordModalForEditOpen] = useState(false)
+  const [isPasswordModalForDeleteOpen, setIsPasswordModalForDeleteOpen] = useState(false)
+
+  const [isNewPostModalOpen, setIsNewPostModalOpen] = useState(false)
+  const [isEditModalOpen, setIsEditModalOpen] = useState(false)
 
   const loadPosts = async (): Promise<Post[]> => {
     const response = await fetch('https://chaplet-divine-mercy.onrender.com/posts');
@@ -66,7 +107,6 @@ const Main = () => {
   useEffect(() => {
     savePosts(posts)
   }, [posts])
-
 
   const filteredPosts = posts.filter(post =>
     post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -93,87 +133,9 @@ const Main = () => {
       const createdPost = await response.json();
       setPosts([...posts, createdPost]);
       setNewPost({ title: '', description: '', contentHtml: '' });
-      setIsModalOpen(false);
-      setIsPasswordValid(false);
-      setPasswordInput('');
+      setIsNewPostModalOpen(false);
     } else {
       alert('Erro ao criar o post.');
-    }
-  };
-
-  const handleUpdatePost = async (id: number) => {
-    const updatedPost = posts.find(post => post.id === id);
-    if (updatedPost) {
-      const response = await fetch(`https://chaplet-divine-mercy.onrender.com/posts/${id}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updatedPost),
-      });
-      if (response.ok) {
-        const updatedPosts = posts.map(post => (post.id === id ? updatedPost : post));
-        setPosts(updatedPosts);
-        setSelectedPost(null);
-      } else {
-        alert('Erro ao atualizar o post.');
-      }
-    }
-  };
-
-  const handleDeletePost = async (id: number) => {
-    const updatedPosts = posts.filter(post => post.id !== id);
-    setPosts(updatedPosts);
-
-    try {
-      const response = await fetch(`https://chaplet-divine-mercy.onrender.com/posts/${id}`, {
-        method: 'DELETE',
-      });
-      if (!response.ok) {
-        throw new Error('Erro ao deletar o post');
-      }
-    } catch (error) {
-      console.error('Erro:', error);
-    }
-  };
-
-  const handlePasswordSubmit = () => {
-    const generatedPassword = generatePassword()
-    if (passwordInput === generatedPassword) {
-      setIsPasswordValid(true)
-    } else {
-      alert('Senha incorreta!')
-    }
-  }
-
-  const handlePasswordSubmitForDelete = () => {
-    const generatedPassword = generatePassword();
-    if (passwordInput === generatedPassword) {
-      setIsPasswordValid(true);
-      if (postToDelete !== null) {
-        handleDeletePost(postToDelete); // Deleta o post após validar a senha
-        setPostToDelete(null); // Reseta o estado
-      }
-      setPasswordInput('');
-      setIsModalOpen(false);
-    } else {
-      alert('Senha incorreta!');
-    }
-  };
-
-  const handleEditPost = (post: Post) => {
-    setPostToEdit(post);
-    setIsPasswordValidForEdit(false); // Reseta a validação de senha para edição
-    setIsModalOpen(true); // Reutiliza o modal para solicitar a senha
-  };
-
-  const handlePasswordSubmitForEdit = () => {
-    const generatedPassword = generatePassword();
-    if (passwordInput === generatedPassword) {
-      setIsPasswordValidForEdit(true);
-      setIsModalOpen(false); // Fecha o modal de senha
-      setIsEditModalOpen(true); // Abre o modal de edição
-      setPasswordInput(''); // Reseta o campo de senha
-    } else {
-      alert('Senha incorreta!');
     }
   };
 
@@ -202,6 +164,72 @@ const Main = () => {
     }
   };
 
+  const handleDeletePost = async (id: number) => {
+    const updatedPosts = posts.filter(post => post.id !== id);
+    setPosts(updatedPosts);
+
+    try {
+      const response = await fetch(`https://chaplet-divine-mercy.onrender.com/posts/${id}`, {
+        method: 'DELETE',
+      });
+      if (!response.ok) {
+        throw new Error('Erro ao deletar o post');
+      }
+    } catch (error) {
+      console.error('Erro:', error);
+    }
+  };
+
+  const handleOpenNewPostPasswordModal = () => {
+    setIsPasswordModalForNewPostOpen(true);
+  };
+
+  const handleOpenEditPasswordModal = (post: Post) => {
+    setPostToEdit(post);
+    setIsPasswordModalForEditOpen(true);
+  };
+
+  const handleOpenDeletePasswordModal = (postId: number) => {
+    setPostToDelete(postId);
+    setIsPasswordModalForDeleteOpen(true);
+  };
+
+  const handlePasswordSubmitForNewPost = () => {
+    const generatedPassword = generatePassword();
+    if (passwordInput === generatedPassword) {
+      setIsPasswordModalForNewPostOpen(false);
+      setPasswordInput('');
+      setIsNewPostModalOpen(true);
+    } else {
+      alert('Senha incorreta!');
+    }
+  };
+
+  const handlePasswordSubmitForEdit = () => {
+    const generatedPassword = generatePassword();
+    if (passwordInput === generatedPassword) {
+      setIsPasswordModalForEditOpen(false);
+      setPasswordInput('');
+      setIsEditModalOpen(true);
+    } else {
+      alert('Senha incorreta!');
+    }
+  };
+
+  const handlePasswordSubmitForDelete = () => {
+    const generatedPassword = generatePassword();
+    if (passwordInput === generatedPassword) {
+      setIsPasswordModalForDeleteOpen(false);
+      setPasswordInput('');
+      if (postToDelete !== null) {
+        handleDeletePost(postToDelete);
+        setPostToDelete(null);
+      }
+    } else {
+      alert('Senha incorreta!');
+    }
+  };
+
   return (
     <div className={`${isDarkMode ? 'bg-gray-900 text-gray-100' : 'bg-gray-100 text-gray-900'} flex min-h-screen flex-col transition-colors duration-300`}>
       {/* Navbar */}
@@ -221,7 +249,7 @@ const Main = () => {
             className={`w-1/2 p-2 rounded-md transition-colors duration-300 ${isDarkMode ? 'bg-gray-700 text-white placeholder-gray-400' : 'bg-gray-200 text-gray-800 placeholder-gray-500'}`}
           />
           <button
-            onClick={() => setIsModalOpen(true)}
+            onClick={handleOpenNewPostPasswordModal}
             className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md transition-colors duration-300"
           >
             Novo Post
@@ -245,7 +273,7 @@ const Main = () => {
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleEditPost(post);
+                    handleOpenEditPasswordModal(post);
                   }}
                   className="text-blue-600 hover:underline"
                 >
@@ -254,8 +282,7 @@ const Main = () => {
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    setPostToDelete(post.id);
-                    setIsModalOpen(true);
+                    handleOpenDeletePasswordModal(post.id);
                   }}
                   className="text-red-600 hover:underline"
                 >
@@ -266,6 +293,70 @@ const Main = () => {
           ))}
         </div>
       </div>
+
+      {/* Selected Post Modal */}
+      {selectedPost && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className={`p-6 rounded-lg shadow-lg w-full max-w-lg ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+            <h2 className="text-xl font-bold mb-4">{selectedPost.title}</h2>
+            <p className="mb-4">{selectedPost.description}</p>
+            <div
+              className={`prose ${isDarkMode ? 'prose-invert' : ''}`}
+              dangerouslySetInnerHTML={{ __html: selectedPost.contentHtml }}
+            />
+            <div className="flex justify-end mt-4">
+              <button
+                onClick={() => setSelectedPost(null)}
+                className="p-2 bg-red-600 hover:bg-red-500 text-white rounded-md transition-colors duration-300"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* New Post Modal */}
+      {isNewPostModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className={`p-6 rounded-lg shadow-lg w-full max-w-lg ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+            <h2 className="text-xl font-bold mb-4">Criar Novo Post</h2>
+            <input
+              type="text"
+              placeholder="Título"
+              value={newPost.title}
+              onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
+              className={`block w-full p-2 mb-2 rounded-md transition-colors duration-300 ${isDarkMode ? 'bg-gray-700 text-white placeholder-gray-400' : 'bg-gray-200 text-gray-800 placeholder-gray-500'}`}
+            />
+            <input
+              type="text"
+              placeholder="Descrição"
+              value={newPost.description}
+              onChange={(e) => setNewPost({ ...newPost, description: e.target.value })}
+              className={`block w-full p-2 mb-2 rounded-md transition-colors duration-300 ${isDarkMode ? 'bg-gray-700 text-white placeholder-gray-400' : 'bg-gray-200 text-gray-800 placeholder-gray-500'}`}
+            />
+            <ReactQuill
+              value={newPost.contentHtml}
+              onChange={(value) => setNewPost({ ...newPost, contentHtml: value })}
+              className="mb-4"
+            />
+            <div className="flex justify-end">
+              <button
+                onClick={() => setIsNewPostModalOpen(false)}
+                className="p-2 bg-red-600 hover:bg-red-500 text-white rounded-md transition-colors duration-300 mr-2"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={handleCreatePost}
+                className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md transition-colors duration-300"
+              >
+                Criar Post
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Edit Post Modal */}
       {isEditModalOpen && postToEdit && (
@@ -309,55 +400,35 @@ const Main = () => {
         </div>
       )}
 
-      {/* Modal */}
-      {selectedPost && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className={`w-full h-full p-6 overflow-auto rounded-lg shadow-lg ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
-            <button
-              onClick={() => setSelectedPost(null)}
-              className="absolute top-4 right-4 p-2 rounded-md shadow-md bg-red-600 hover:bg-red-500 text-white transition-colors duration-300"
-            >
-              ✖
-            </button>
-            <h1 className="text-3xl font-bold mb-4">{selectedPost.title}</h1>
-            <p className="text-sm text-gray-500 mb-4">{selectedPost.description}</p>
-            <ReactQuill value={selectedPost.contentHtml} readOnly={true} theme="bubble" />
-          </div>
-        </div>
+      {/* Password Modals */}
+      {isPasswordModalForNewPostOpen && (
+        <PasswordModal
+          title="Digite a senha para criar um novo post"
+          onCancel={() => setIsPasswordModalForNewPostOpen(false)}
+          onSubmit={handlePasswordSubmitForNewPost}
+          passwordInput={passwordInput}
+          setPasswordInput={setPasswordInput}
+        />
       )}
 
-      {/* Create/Edit Password Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className={`p-6 rounded-lg shadow-lg w-full max-w-lg ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
-            <h2 className="text-xl font-bold mb-4">Digite a senha para continuar</h2>
-            <input
-              type="password"
-              placeholder="Senha"
-              value={passwordInput}
-              onChange={(e) => setPasswordInput(e.target.value)}
-              className={`block w-full p-2 mb-4 rounded-md transition-colors duration-300 ${isDarkMode ? 'bg-gray-700 text-white placeholder-gray-400' : 'bg-gray-200 text-gray-800 placeholder-gray-500'}`}
-            />
-            <div className="flex justify-end">
-              <button
-                onClick={() => {
-                  setIsModalOpen(false);
-                  setPasswordInput('');
-                  setPostToEdit(null); // Reseta o post a ser editado
-                }}
-                className="p-2 bg-red-600 hover:bg-red-500 text-white rounded-md transition-colors duration-300 mr-2"
-              >
-                Cancelar
-              </button>
-              <button
-                onClick={postToEdit ? handlePasswordSubmitForEdit : handlePasswordSubmit}
-                className="p-2 bg-blue-600 hover:bg-blue-500 text-white rounded-md transition-colors duration-300"
-              >
-                Validar Senha
-              </button>
-            </div>
-          </div>
-        </div>
+      {isPasswordModalForEditOpen && (
+        <PasswordModal
+          title="Digite a senha para editar o post"
+          onCancel={() => setIsPasswordModalForEditOpen(false)}
+          onSubmit={handlePasswordSubmitForEdit}
+          passwordInput={passwordInput}
+          setPasswordInput={setPasswordInput}
+        />
+      )}
+
+      {isPasswordModalForDeleteOpen && (
+        <PasswordModal
+          title="Digite a senha para deletar o post"
+          onCancel={() => setIsPasswordModalForDeleteOpen(false)}
+          onSubmit={handlePasswordSubmitForDelete}
+          passwordInput={passwordInput}
+          setPasswordInput={setPasswordInput}
+        />
       )}
     </div>
   )
