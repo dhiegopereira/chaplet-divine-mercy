@@ -51,7 +51,7 @@ const Main = () => {
   const [isPasswordValidForEdit, setIsPasswordValidForEdit] = useState(false); // Estado para validar senha antes de editar
 
   const loadPosts = async (): Promise<Post[]> => {
-    const response = await fetch('http://localhost:3001/posts');
+    const response = await fetch('https://chaplet-divine-mercy.onrender.com/posts');
     return response.json();
   };
 
@@ -83,7 +83,7 @@ const Main = () => {
       updatedAt: new Date(),
     };
   
-    const response = await fetch('http://localhost:3001/posts', {
+    const response = await fetch('https://chaplet-divine-mercy.onrender.com/posts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newPostData),
@@ -104,7 +104,7 @@ const Main = () => {
   const handleUpdatePost = async (id: number) => {
     const updatedPost = posts.find(post => post.id === id);
     if (updatedPost) {
-      const response = await fetch(`http://localhost:3001/posts/${id}`, {
+      const response = await fetch(`https://chaplet-divine-mercy.onrender.com/posts/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedPost),
@@ -124,7 +124,7 @@ const Main = () => {
     setPosts(updatedPosts);
 
     try {
-      const response = await fetch(`http://localhost:3001/posts/${id}`, {
+      const response = await fetch(`https://chaplet-divine-mercy.onrender.com/posts/${id}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
@@ -180,7 +180,7 @@ const Main = () => {
   const handleSaveEditedPost = async () => {
     if (postToEdit) {
       try {
-        const response = await fetch(`http://localhost:3001/posts/${postToEdit.id}`, {
+        const response = await fetch(`https://chaplet-divine-mercy.onrender.com/posts/${postToEdit.id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(postToEdit),
