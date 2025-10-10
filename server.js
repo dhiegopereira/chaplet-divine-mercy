@@ -4,8 +4,19 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Middleware para servir arquivos estáticos
-app.use(express.static(path.join(__dirname)));
+// Middleware para servir arquivos estáticos com headers corretos
+app.use(
+  express.static(path.join(__dirname), {
+    setHeaders: (res, path, stat) => {
+      if (path.endsWith('.css')) {
+        res.set('Content-Type', 'text/css');
+      }
+      if (path.endsWith('.js')) {
+        res.set('Content-Type', 'application/javascript');
+      }
+    },
+  })
+);
 
 // Middleware para parsing de JSON
 app.use(express.json());
@@ -24,6 +35,17 @@ app.use((req, res, next) => {
 // Rota principal - serve o index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Rotas específicas para arquivos estáticos importantes
+app.get('/styles.css', (req, res) => {
+  res.setHeader('Content-Type', 'text/css');
+  res.sendFile(path.join(__dirname, 'styles.css'));
+});
+
+app.get('/script.js', (req, res) => {
+  res.setHeader('Content-Type', 'application/javascript');
+  res.sendFile(path.join(__dirname, 'script.js'));
 });
 
 // Rota para servir o arquivo de terço (caso precise acessar via API)
