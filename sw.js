@@ -1,5 +1,5 @@
 // Service Worker para PWA - Terço Digital
-const CACHE_NAME = 'terco-digital-v1';
+const CACHE_NAME = 'terco-digital-v2';
 const urlsToCache = [
   '/',
   '/index.html',

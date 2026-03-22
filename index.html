@@ -1,261 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>📿 Terço Digital - Meditação Diária</title>
-    <meta
-      name="description"
-      content="Aplicativo web para rezar o Terço com meditações guiadas dos Mistérios Gozosos, Dolorosos, Gloriosos e Luminosos"
-    />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📿</text></svg>"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Menu Lateral -->
-    <nav class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <h2>📿 Terço Digital</h2>
-        <button class="close-btn" id="closeSidebar">&times;</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📿 Terço Digital - Meditação Diária</title>
+  <meta name="description"
+    content="Aplicativo web para rezar o Terço com meditações guiadas dos Mistérios Gozosos, Dolorosos, Gloriosos e Luminosos" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📿</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="selection-mode">
+  <section class="selector-screen" id="rosarySelector">
+    <div class="selector-content">
+      <div class="selector-hero">
+        <span class="selector-badge">oração guiada</span>
+        <h1>Escolha qual terço deseja rezar</h1>
+        <p>
+          Acesse o Terço Mariano tradicional ou o Terço das Santas Chagas,
+          com navegação simples, meditações diárias e opção de voltar quando
+          quiser trocar.
+        </p>
       </div>
 
-      <div class="sidebar-content">
-        <div class="menu-section">
-          <h3>Dias da Semana</h3>
-          <ul class="menu-list">
-            <li>
-              <a href="#" data-day="segunda" class="menu-item active"
-                >Segunda - Mistérios Gozosos</a
-              >
-            </li>
-            <li>
-              <a href="#" data-day="terca" class="menu-item"
-                >Terça - Mistérios Dolorosos</a
-              >
-            </li>
-            <li>
-              <a href="#" data-day="quarta" class="menu-item"
-                >Quarta - Mistérios Gloriosos</a
-              >
-            </li>
-            <li>
-              <a href="#" data-day="quinta" class="menu-item"
-                >Quinta - Mistérios Luminosos</a
-              >
-            </li>
-            <li>
-              <a href="#" data-day="sexta" class="menu-item"
-                >Sexta - Mistérios Dolorosos</a
-              >
-            </li>
-            <li>
-              <a href="#" data-day="sabado" class="menu-item"
-                >Sábado - Mistérios Gozosos</a
-              >
-            </li>
-            <li>
-              <a href="#" data-day="domingo" class="menu-item"
-                >Domingo - Mistérios Gloriosos</a
-              >
-            </li>
-          </ul>
-        </div>
+      <div class="selector-grid">
+        <button class="selector-card" data-rosary-select="traditional">
+          <span class="selector-icon">📿</span>
+          <h2>Terço Mariano</h2>
+          <p>
+            Mistérios Gozosos, Dolorosos, Gloriosos e Luminosos conforme o dia
+            da semana.
+          </p>
+          <span class="selector-action">Acessar este terço</span>
+        </button>
 
-        <div class="menu-section">
-          <h3>Funcionalidades</h3>
-          <ul class="menu-list">
-            <li>
-              <a href="#" class="menu-item" id="timerToggle"
-                >⏱️ Timer de Meditação</a
-              >
-            </li>
-            <li>
-              <a href="#" class="menu-item" id="helpToggle"
-                >❓ Guia de Oração</a
-              >
-            </li>
-            <li>
-              <a href="#" class="menu-item" id="settingsToggle"
-                >⚙️ Configurações</a
-              >
-            </li>
-          </ul>
-        </div>
+        <button class="selector-card" data-rosary-select="holyWounds">
+          <span class="selector-icon">🩸</span>
+          <h2>Terço das Santas Chagas</h2>
+          <p>
+            Sequência própria de orações com sugestões de meditação diárias
+            conforme as imagens enviadas.
+          </p>
+          <span class="selector-action">Acessar este terço</span>
+        </button>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <!-- Overlay para mobile -->
-    <div class="overlay" id="overlay"></div>
+  <!-- Menu Lateral -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2 id="sidebarTitle">📿 Terço Digital</h2>
+      <button class="close-btn" id="closeSidebar">&times;</button>
+    </div>
 
-    <!-- Conteúdo Principal -->
-    <main class="main-content">
-      <!-- Header -->
-      <header class="header">
+    <div class="sidebar-content">
+      <div class="menu-section">
+        <h3 id="dayMenuTitle">Dias da Semana</h3>
+        <ul class="menu-list" id="dayMenuList"></ul>
+      </div>
+
+      <div class="menu-section">
+        <h3>Funcionalidades</h3>
+        <ul class="menu-list">
+          <li>
+            <a href="#" class="menu-item" id="timerToggle">⏱️ Timer de Meditação</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item" id="helpToggle">❓ Guia de Oração</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item" id="settingsToggle">⚙️ Configurações</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Overlay para mobile -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-start">
+        <button class="back-btn" id="backToSelectorBtn" title="Escolher outro terço">
+          ←
+        </button>
         <button class="menu-btn" id="menuBtn">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <h1 id="pageTitle">Mistérios Gozosos - Segunda-feira</h1>
-        <div class="header-actions">
-          <button class="action-btn" id="musicBtn" title="Música de Fundo">
-            🎵
-          </button>
-          <button class="action-btn" id="helpBtn" title="Ajuda">❓</button>
-          <button class="action-btn" id="timerBtn" title="Timer">⏱️</button>
-        </div>
-      </header>
-
-      <!-- Área de Ajuda -->
-      <div class="help-panel" id="helpPanel">
-        <div class="help-content">
-          <h3>💡 Como rezar o Terço</h3>
-          <div class="help-tips">
-            <div class="tip">
-              <strong>1. Preparação:</strong>
-              <p>
-                Encontre um local tranquilo, faça o sinal da cruz e ofereça seu
-                terço com intenção.
-              </p>
-            </div>
-            <div class="tip">
-              <strong>2. Meditação:</strong>
-              <p>
-                Reflita sobre cada mistério enquanto reza. Use o timer para
-                pausar e meditar.
-              </p>
-            </div>
-            <div class="tip">
-              <strong>3. Ritmo:</strong>
-              <p>
-                Não tenha pressa. Cada Ave-Maria pode durar 30-60 segundos com
-                meditação.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
+      <h1 id="pageTitle">Mistérios Gozosos - Segunda-feira</h1>
+      <div class="header-actions">
+        <button class="action-btn" id="musicBtn" title="Música de Fundo">
+          🎵
+        </button>
+        <button class="action-btn" id="helpBtn" title="Ajuda">❓</button>
+        <button class="action-btn" id="timerBtn" title="Timer">⏱️</button>
+      </div>
+    </header>
 
-      <!-- Timer Panel -->
-      <div class="timer-panel" id="timerPanel">
-        <div class="timer-content">
-          <h3>⏱️ Timer de Meditação</h3>
-          <div class="timer-display">
-            <span id="timerDisplay">00:00</span>
-          </div>
-          <div class="timer-controls">
-            <button class="timer-btn" id="startTimer">Iniciar</button>
-            <button class="timer-btn" id="pauseTimer">Pausar</button>
-            <button class="timer-btn" id="resetTimer">Reiniciar</button>
-          </div>
-          <div class="timer-settings">
-            <label>Tempo por Ave-Maria (segundos):</label>
-            <input
-              type="range"
-              id="timerDuration"
-              min="30"
-              max="120"
-              value="45"
-            />
-            <span id="durationDisplay">45s</span>
-          </div>
+    <!-- Área de Ajuda -->
+    <div class="help-panel" id="helpPanel">
+      <div class="help-content">
+        <h3 id="helpPanelTitle">💡 Como rezar o Terço</h3>
+        <div class="help-tips" id="helpTips"></div>
+      </div>
+    </div>
+
+    <!-- Timer Panel -->
+    <div class="timer-panel" id="timerPanel">
+      <div class="timer-content">
+        <h3>⏱️ Timer de Meditação</h3>
+        <div class="timer-display">
+          <span id="timerDisplay">00:00</span>
         </div>
-      </div>
-
-      <!-- Conteúdo do Terço -->
-      <section class="prayer-content" id="prayerContent">
-        <!-- Conteúdo será carregado dinamicamente pelo JavaScript -->
-      </section>
-
-      <!-- Contador de Progresso -->
-      <div class="progress-bar">
-        <div class="progress-fill" id="progressFill"></div>
-        <span class="progress-text" id="progressText">0/53 orações</span>
-      </div>
-
-      <!-- Controles de Navegação -->
-      <div class="prayer-controls">
-        <button class="control-btn" id="prevBtn">⬅️ Anterior</button>
-        <button class="control-btn primary" id="nextBtn">Próximo ➡️</button>
-      </div>
-    </main>
-
-    <!-- Modal de Configurações -->
-    <div class="modal" id="settingsModal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3>⚙️ Configurações</h3>
-          <button class="close-btn" id="closeSettings">&times;</button>
+        <div class="timer-controls">
+          <button class="timer-btn" id="startTimer">Iniciar</button>
+          <button class="timer-btn" id="pauseTimer">Pausar</button>
+          <button class="timer-btn" id="resetTimer">Reiniciar</button>
         </div>
-        <div class="modal-body">
-          <div class="setting-group">
-            <label>Tema:</label>
-            <select id="themeSelect">
-              <option value="light">Claro</option>
-              <option value="dark">Escuro</option>
-              <option value="sepia">Sépia</option>
-            </select>
-          </div>
-          <div class="setting-group">
-            <label>Tamanho da Fonte:</label>
-            <input
-              type="range"
-              id="fontSizeRange"
-              min="14"
-              max="24"
-              value="16"
-            />
-            <span id="fontSizeDisplay">16px</span>
-          </div>
-          <div class="setting-group">
-            <label>
-              <input type="checkbox" id="soundEnabled" />
-              Sons de notificação
-            </label>
-          </div>
-          <div class="setting-group">
-            <label>
-              <input type="checkbox" id="autoAdvance" />
-              Avançar automaticamente
-            </label>
-          </div>
-          <div class="setting-group">
-            <label>
-              <input type="checkbox" id="backgroundMusicEnabled" />
-              Música de fundo instrumental
-            </label>
-          </div>
+        <div class="timer-settings">
+          <label>Tempo por Ave-Maria (segundos):</label>
+          <input type="range" id="timerDuration" min="30" max="120" value="45" />
+          <span id="durationDisplay">45s</span>
         </div>
       </div>
     </div>
 
-    <!-- Elemento de áudio para música de fundo -->
-    <audio id="backgroundMusic" loop preload="none">
-      <!-- Música instrumental suave para meditação -->
-      <source
-        src="https://cdn.pixabay.com/audio/2022/08/23/audio_7b6e0434ab.mp3"
-        type="audio/mpeg"
-      />
-      <source
-        src="https://cdn.pixabay.com/audio/2021/08/04/audio_5c31a6ca7e.mp3"
-        type="audio/mpeg"
-      />
-      <source
-        src="https://cdn.pixabay.com/audio/2022/05/27/audio_2cb9a70a4f.mp3"
-        type="audio/mpeg"
-      />
-      Seu navegador não suporta áudio HTML5.
-    </audio>
+    <!-- Conteúdo do Terço -->
+    <section class="prayer-content" id="prayerContent">
+      <!-- Conteúdo será carregado dinamicamente pelo JavaScript -->
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <!-- Contador de Progresso -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+      <span class="progress-text" id="progressText">0/53 orações</span>
+    </div>
+
+    <!-- Controles de Navegação -->
+    <div class="prayer-controls">
+      <button class="control-btn" id="prevBtn">⬅️ Anterior</button>
+      <button class="control-btn primary" id="nextBtn">Próximo ➡️</button>
+    </div>
+  </main>
+
+  <!-- Modal de Configurações -->
+  <div class="modal" id="settingsModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>⚙️ Configurações</h3>
+        <button class="close-btn" id="closeSettings">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="setting-group">
+          <label>Tema:</label>
+          <select id="themeSelect">
+            <option value="light">Claro</option>
+            <option value="dark">Escuro</option>
+            <option value="sepia">Sépia</option>
+          </select>
+        </div>
+        <div class="setting-group">
+          <label>Tamanho da Fonte:</label>
+          <input type="range" id="fontSizeRange" min="14" max="24" value="16" />
+          <span id="fontSizeDisplay">16px</span>
+        </div>
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="soundEnabled" />
+            Sons de notificação
+          </label>
+        </div>
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="autoAdvance" />
+            Avançar automaticamente
+          </label>
+        </div>
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="backgroundMusicEnabled" />
+            Música de fundo instrumental
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Elemento de áudio para música de fundo -->
+  <audio id="backgroundMusic" loop preload="none">
+    <!-- Música instrumental suave para meditação -->
+    <source src="https://cdn.pixabay.com/audio/2022/08/23/audio_7b6e0434ab.mp3" type="audio/mpeg" />
+    <source src="https://cdn.pixabay.com/audio/2021/08/04/audio_5c31a6ca7e.mp3" type="audio/mpeg" />
+    <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_2cb9a70a4f.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
