@@ -58,7 +58,7 @@
   <nav class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2 id="sidebarTitle">📿 Terço Digital</h2>
-      <button class="close-btn" id="closeSidebar">&times;</button>
+      <button class="close-btn" id="closeSidebar" title="Fechar menu">&times;</button>
     </div>
 
     <div class="sidebar-content">
@@ -71,14 +71,24 @@
         <h3>Funcionalidades</h3>
         <ul class="menu-list">
           <li>
-            <a href="#" class="menu-item" id="timerToggle">⏱️ Timer de Meditação</a>
+            <a href="#" class="menu-item" id="timerToggle" title="Ative o timer para cada Ave-Maria">⏱️ Timer de
+              Meditação</a>
           </li>
           <li>
-            <a href="#" class="menu-item" id="helpToggle">❓ Guia de Oração</a>
+            <a href="#" class="menu-item" id="helpToggle" title="Ver dicas de como rezar">❓ Guia de Oração</a>
           </li>
           <li>
-            <a href="#" class="menu-item" id="settingsToggle">⚙️ Configurações</a>
+            <a href="#" class="menu-item" id="settingsToggle" title="Personalize sua experiência">⚙️ Configurações</a>
           </li>
+        </ul>
+      </div>
+
+      <div class="menu-section menu-tips">
+        <h4>💡 Dicas Rápidas</h4>
+        <ul class="quick-tips">
+          <li><kbd>←</kbd> <kbd>→</kbd> Navegar</li>
+          <li><kbd>Espaço</kbd> Timer</li>
+          <li>Clique no mistério para expandir</li>
         </ul>
       </div>
     </div>
@@ -92,10 +102,10 @@
     <!-- Header -->
     <header class="header">
       <div class="header-start">
-        <button class="back-btn" id="backToSelectorBtn" title="Escolher outro terço">
+        <button class="back-btn" id="backToSelectorBtn" title="Voltar e escolher outro terço">
           ←
         </button>
-        <button class="menu-btn" id="menuBtn">
+        <button class="menu-btn" id="menuBtn" title="Abrir menu lateral">
           <span></span>
           <span></span>
           <span></span>
@@ -103,11 +113,11 @@
       </div>
       <h1 id="pageTitle">Mistérios Gozosos - Segunda-feira</h1>
       <div class="header-actions">
-        <button class="action-btn" id="musicBtn" title="Música de Fundo">
+        <button class="action-btn" id="musicBtn" title="Tocar/pausar música de fundo">
           🎵
         </button>
-        <button class="action-btn" id="helpBtn" title="Ajuda">❓</button>
-        <button class="action-btn" id="timerBtn" title="Timer">⏱️</button>
+        <button class="action-btn" id="helpBtn" title="Ver guia de oração">❓</button>
+        <button class="action-btn" id="timerBtn" title="Ativar timer de meditação">⏱️</button>
       </div>
     </header>
 
@@ -145,16 +155,23 @@
     </section>
 
     <!-- Contador de Progresso -->
-    <div class="progress-bar">
+    <div class="progress-bar" title="Seu progresso na oração">
       <div class="progress-fill" id="progressFill"></div>
       <span class="progress-text" id="progressText">0/53 orações</span>
     </div>
 
     <!-- Controles de Navegação -->
     <div class="prayer-controls">
-      <button class="control-btn" id="prevBtn">⬅️ Anterior</button>
-      <button class="control-btn primary" id="nextBtn">Próximo ➡️</button>
+      <button class="control-btn" id="prevBtn" title="Voltar para a oração anterior (Seta ←)">⬅️ Anterior</button>
+      <button class="control-btn primary" id="nextBtn" title="Avançar para a próxima oração (Seta →)">Próximo
+        ➡️</button>
     </div>
+
+    <!-- Botão de Ajuda Flutuante -->
+    <button class="floating-help-btn" id="floatingHelpBtn" title="Precisa de ajuda? Clique aqui!">
+      <span class="help-icon">💡</span>
+      <span class="help-text">Ajuda</span>
+    </button>
   </main>
 
   <!-- Modal de Configurações -->

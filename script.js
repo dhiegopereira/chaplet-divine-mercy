@@ -1,4 +1,5 @@
-// ========== DADOS DOS MISTÉRIOS ==========
+// ========== DADOS DOS MISTÉRIOS (COM TEXTOS BÍBLICOS COMPLETOS) ==========
+
 const traditionalMysteriesData = {
   segunda: {
     title: 'Mistérios Gozosos - Segunda-feira',
@@ -8,46 +9,46 @@ const traditionalMysteriesData = {
         number: 1,
         title: 'A Anunciação',
         scripture:
-          "O anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem... O anjo lhe disse: 'Ave, cheia de graça, o Senhor está contigo'.",
-        reference: 'Lc 1, 26-28',
+          "No sexto mês, o anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um varão chamado José, da casa de Davi; e o nome da virgem era Maria. Entrando onde ela estava, disse-lhe: 'Alegra-te, cheia de graça, o Senhor está contigo'. Ela ficou intrigada com essa palavra e pôs-se a pensar qual seria o significado da saudação. O anjo, porém, acrescentou: 'Não temas, Maria! Encontraste graça junto de Deus. Eis que conceberás no teu seio e darás à luz um filho, e tu o chamarás com o nome de Jesus'.",
+        reference: 'Lucas 1, 26-31',
         meditation:
-          'Contemplemos a humildade e obediência de Maria ao aceitar ser a Mãe de Deus.',
+          'Contemplemos a humildade e obediência de Maria ao aceitar ser a Mãe de Deus. Peçamos a graça de sermos dóceis à vontade divina em nossa vida.',
       },
       {
         number: 2,
         title: 'A Visitação',
         scripture:
-          'Maria partiu para a região montanhosa, dirigindo-se, apressadamente, a uma cidade de Judá. Entrou na casa de Zacarias e saudou Isabel. Quando Isabel ouviu a saudação de Maria, a criança lhe estremeceu no ventre.',
-        reference: 'Lc 1, 39-41',
+          'Naqueles dias, Maria se levantou e foi às pressas às montanhas, a uma cidade de Judá. Entrou em casa de Zacarias e saudou Isabel. Ora, quando Isabel ouviu a saudação de Maria, a criança estremeceu no seu seio e Isabel ficou repleta do Espírito Santo. E exclamou em alta voz: "Bendita és tu entre as mulheres e bendito é o fruto do teu ventre! Donde me vem esta graça de vir a mim a mãe do meu Senhor? Pois quando a voz da tua saudação chegou aos meus ouvidos, a criança estremeceu de alegria no meu seio".',
+        reference: 'Lucas 1, 39-44',
         meditation:
-          'Meditemos sobre a caridade de Maria em visitar e ajudar sua prima Isabel.',
+          'Meditemos sobre a caridade de Maria em visitar e ajudar sua prima Isabel. Peçamos a graça de servir ao próximo com prontidão e amor generoso.',
       },
       {
         number: 3,
         title: 'O Nascimento de Jesus',
         scripture:
-          'Enquanto lá estavam, completaram-se os dias dela. E Maria deu à luz seu filho primogênito, envolveu-o em faixas e deitou-o numa manjedoura, porque não havia lugar para eles na hospedaria.',
-        reference: 'Lc 2, 6-7',
+          'Aconteceu que, estando eles ali, completaram-se os dias dela. E deu à luz o seu filho primogênito, e enfaixou-o e reclinou-o numa manjedoura, porque não havia lugar para eles na sala. Havia nessa região pastores que viviam nos campos e guardavam o seu rebanho durante as vigílias da noite. Um anjo do Senhor apareceu-lhes e a glória do Senhor refulgiu ao redor deles; e ficaram possuídos de grande temor. O anjo disse-lhes: "Não temais, eis que vos anuncio uma boa-nova que será uma grande alegria para todo o povo: hoje vos nasceu um Salvador, que é o Cristo Senhor, na cidade de Davi".',
+        reference: 'Lucas 2, 6-11',
         meditation:
-          'Contemplemos a simplicidade e pobreza do nascimento do Salvador.',
+          'Contemplemos a simplicidade e pobreza do nascimento do Salvador. Abramos nosso coração para acolher Jesus com humildade.',
       },
       {
         number: 4,
         title: 'A Apresentação no Templo',
         scripture:
-          "Levaram-no a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na lei do Senhor: 'Todo primogênito do sexo masculino será consagrado ao Senhor'.",
-        reference: 'Lc 2, 22-23',
+          "Quando se completaram os dias para a purificação deles segundo a Lei de Moisés, levaram-no a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na Lei do Senhor: 'Todo primogênito do sexo masculino será consagrado ao Senhor', e para oferecerem o sacrifício prescrito pela Lei do Senhor, um par de rolas ou dois pombinhos. Havia em Jerusalém um homem chamado Simeão. Este homem, justo e piedoso, esperava a consolação de Israel, e o Espírito Santo estava nele.",
+        reference: 'Lucas 2, 22-25',
         meditation:
-          'Meditemos sobre a obediência de Maria e José à lei de Deus.',
+          'Meditemos sobre a obediência de Maria e José à lei de Deus. Consagremos nossa vida inteiramente ao Senhor.',
       },
       {
         number: 5,
         title: 'A Perda e o Encontro de Jesus no Templo',
         scripture:
-          'Três dias depois, encontraram-no no templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam estupefatos com sua inteligência e suas respostas.',
-        reference: 'Lc 2, 46-47',
+          'Decorridos três dias, encontraram-no no Templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam extasiados com a sua inteligência e com as suas respostas. Ao vê-lo, ficaram surpresos, e sua mãe lhe disse: "Filho, por que agiste assim conosco? Eis que teu pai e eu, angustiados, te procurávamos". Respondeu-lhes ele: "Por que me procuráveis? Não sabíeis que devo ocupar-me das coisas de meu Pai?".',
+        reference: 'Lucas 2, 46-49',
         meditation:
-          'Contemplemos Jesus dedicado às coisas de seu Pai celestial.',
+          'Contemplemos Jesus dedicado às coisas de seu Pai celestial. Busquemos fazer sempre a vontade de Deus em primeiro lugar.',
       },
     ],
   },
@@ -59,45 +60,46 @@ const traditionalMysteriesData = {
         number: 1,
         title: 'A Agonia de Jesus no Horto das Oliveiras',
         scripture:
-          "Então lhes disse: 'Minha alma está numa tristeza de morte. Ficai aqui e vigiai comigo'. Adiantando-se um pouco, prostrou-se com a face por terra e orava: 'Meu Pai, se é possível, afasta de mim este cálice. Todavia, faça-se não como eu quero, mas como tu queres'.",
-        reference: 'Mt 26, 38-39',
+          "Então Jesus chegou com eles a um lugar chamado Getsêmani e disse aos discípulos: 'Assentai-vos aqui, enquanto eu vou ali orar'. Tomando consigo Pedro e os dois filhos de Zebedeu, começou a entristecer-se e a angustiar-se. Disse-lhes então: 'Minha alma está triste até a morte. Ficai aqui e vigiai comigo'. Adiantando-se um pouco, prostrou-se com a face por terra, orando e dizendo: 'Meu Pai, se é possível, afasta de mim este cálice! Todavia, não seja como eu quero, mas sim como tu queres'.",
+        reference: 'Mateus 26, 36-39',
         meditation:
-          'Contemplemos a agonia de Jesus e sua total submissão à vontade do Pai.',
+          'Contemplemos a agonia de Jesus e sua total submissão à vontade do Pai. Ofereçamos nossas angústias e sofrimentos unidos aos de Cristo.',
       },
       {
         number: 2,
         title: 'A Flagelação de Jesus',
-        scripture: 'Pilatos então tomou Jesus e mandou flagelá-lo.',
-        reference: 'Jo 19, 1',
+        scripture:
+          'Pilatos então tomou Jesus e mandou flagelá-lo. Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: "Salve, rei dos judeus!". E davam-lhe bofetadas.',
+        reference: 'João 19, 1-3',
         meditation:
-          'Meditemos sobre os sofrimentos físicos que Jesus suportou por nossos pecados.',
+          'Meditemos sobre os sofrimentos físicos que Jesus suportou por nossos pecados. Peçamos perdão por nossas ofensas e a graça da conversão.',
       },
       {
         number: 3,
         title: 'A Coroação de Espinhos',
         scripture:
-          "Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: 'Salve, rei dos judeus!'.",
-        reference: 'Jo 19, 2-3',
+          'Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: "Salve, rei dos judeus!". E davam-lhe bofetadas. Pilatos saiu novamente e disse-lhes: "Eis que eu vo-lo trago fora, para saberdes que não acho nele crime algum". Saiu, pois, Jesus, trazendo a coroa de espinhos e o manto de púrpura. Disse-lhes Pilatos: "Eis o homem!".',
+        reference: 'João 19, 2-5',
         meditation:
-          'Contemplemos a paciência de Jesus diante das humilhações e zombarias.',
+          'Contemplemos a paciência de Jesus diante das humilhações e zombarias. Aceitemos as humilhações com mansidão e perdão.',
       },
       {
         number: 4,
         title: 'Jesus Carrega a Cruz',
         scripture:
-          'Então Pilatos o entregou para ser crucificado. Tomaram, pois, a Jesus, que, carregando a sua cruz, saiu para o lugar chamado Calvário.',
-        reference: 'Jo 19, 16-17',
+          'Pilatos então o entregou para ser crucificado. Tomaram, pois, a Jesus. Carregando ele mesmo a cruz, saiu para o lugar chamado Calvário, que em hebraico se chama Gólgota. Seguia-o grande multidão do povo e de mulheres que batiam no peito e o lamentavam. Voltando-se para elas, Jesus disse: "Filhas de Jerusalém, não choreis por mim, mas chorai por vós mesmas e por vossos filhos".',
+        reference: 'João 19, 16-17; Lucas 23, 27-28',
         meditation:
-          'Meditemos sobre a força de Jesus para carregar nossa cruz de pecados.',
+          'Meditemos sobre a força e o amor de Jesus ao carregar nossa cruz de pecados. Carreguemos nossa cruz diária com coragem e amor.',
       },
       {
         number: 5,
         title: 'A Crucificação e Morte de Jesus',
         scripture:
-          "Chegados ao lugar chamado Calvário, ali o crucificaram. [...] Jesus exclamou com voz forte: 'Pai, em tuas mãos entrego o meu espírito'. E, dizendo isso, expirou.",
-        reference: 'Lc 23, 33.46',
+          'Quando chegaram ao lugar chamado Calvário, ali o crucificaram, bem como aos malfeitores, um à direita e outro à esquerda. Jesus, porém, dizia: "Pai, perdoa-lhes, porque não sabem o que fazem". Era quase à hora sexta e as trevas cobriram toda a terra até a hora nona. O sol se eclipsou. O véu do Templo rasgou-se pelo meio. Jesus deu um forte grito: "Pai, em tuas mãos entrego o meu espírito". E, dizendo isso, expirou.',
+        reference: 'Lucas 23, 33-34.44-46',
         meditation:
-          'Contemplemos o supremo sacrifício de Jesus por nossa salvação.',
+          'Contemplemos o supremo sacrifício de Jesus por nossa salvação. Agradeçamos o dom inestimável da Redenção e vivamos em santidade.',
       },
     ],
   },
@@ -109,44 +111,46 @@ const traditionalMysteriesData = {
         number: 1,
         title: 'A Ressurreição de Jesus',
         scripture:
-          "O anjo disse às mulheres: 'Não tenhais medo! Sei que procurais Jesus, que foi crucificado. Ele não está aqui, pois ressuscitou, como havia dito. Vinde ver o lugar onde ele estava'.",
-        reference: 'Mt 28, 5-6',
+          "Passado o sábado, Maria Madalena, Maria, mãe de Tiago, e Salomé compraram aromas para ungir Jesus. No primeiro dia da semana, muito cedo, ao nascer do sol, foram ao sepulcro. Diziam entre si: 'Quem nos removerá a pedra da entrada do sepulcro?'. Levantando os olhos, viram que a pedra já estava removida; e era muito grande. Entrando no sepulcro, viram um jovem sentado à direita, vestido de branco, e ficaram surpreendidas. Ele lhes disse: 'Não vos assusteis! Procurais Jesus de Nazaré, que foi crucificado. Ressuscitou, não está aqui. Eis o lugar onde o puseram'.",
+        reference: 'Marcos 16, 1-6',
         meditation:
-          'Contemplemos a vitória de Jesus sobre a morte e nossa esperança de vida eterna.',
+          'Contemplemos a vitória de Jesus sobre a morte e nossa esperança de vida eterna. Vivamos a alegria pascal da Ressurreição.',
       },
       {
         number: 2,
         title: 'A Ascensão de Jesus ao Céu',
         scripture:
-          'Enquanto os abençoava, afastou-se deles e foi elevado ao céu.',
-        reference: 'Lc 24, 51',
-        meditation: 'Meditemos sobre Jesus preparando-nos um lugar no céu.',
+          'Jesus levou os discípulos até perto de Betânia e, erguendo as mãos, abençoou-os. Ora, enquanto os abençoava, separou-se deles e foi elevado ao céu. Eles, depois de se terem prostrado diante dele, voltaram a Jerusalém com grande alegria. E estavam continuamente no Templo bendizendo a Deus.',
+        reference: 'Lucas 24, 50-53',
+        meditation:
+          'Meditemos sobre Jesus preparando-nos um lugar no céu. Vivamos com os olhos fixos na Pátria celestial.',
       },
       {
         number: 3,
         title: 'A Vinda do Espírito Santo',
         scripture:
-          'De repente, veio do céu um ruído, como de um vento impetuoso, e encheu toda a casa onde se encontravam. Então apareceram línguas como de fogo, que se repartiram e pousaram sobre cada um deles. Todos ficaram cheios do Espírito Santo.',
-        reference: 'At 2, 2-4',
-        meditation: 'Contemplemos os dons do Espírito Santo em nossa vida.',
+          'Chegando o dia de Pentecostes, estavam todos reunidos no mesmo lugar. De repente, veio do céu um ruído, como que de um vento impetuoso, e encheu toda a casa onde estavam sentados. Apareceram-lhes então línguas como de fogo, que se repartiram e repousaram sobre cada um deles. Ficaram todos cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito Santo lhes concedia que falassem.',
+        reference: 'Atos 2, 1-4',
+        meditation:
+          'Contemplemos os dons do Espírito Santo em nossa vida. Abramos o coração para receber os dons e frutos do Espírito.',
       },
       {
         number: 4,
         title: 'A Assunção de Nossa Senhora',
         scripture:
-          'Uma grande sinal apareceu no céu: uma mulher vestida de sol, tendo a lua debaixo dos pés e sobre a cabeça uma coroa de doze estrelas.',
-        reference: 'Ap 12, 1',
+          'Apareceu em seguida um grande sinal no céu: uma Mulher revestida do sol, a lua debaixo dos seus pés e na cabeça uma coroa de doze estrelas. Estava grávida e gritava de dores, sentindo as angústias de dar à luz. Viu-se também outro sinal no céu: um grande Dragão vermelho, com sete cabeças e dez chifres, e nas cabeças sete coroas.',
+        reference: 'Apocalipse 12, 1-3',
         meditation:
-          'Meditemos sobre a glorificação de Maria em corpo e alma no céu.',
+          'Meditemos sobre a glorificação de Maria em corpo e alma no céu. Peçamos sua intercessão para alcançarmos a glória celeste.',
       },
       {
         number: 5,
         title: 'A Coroação de Nossa Senhora como Rainha do Céu e da Terra',
         scripture:
-          'Apareceu, então, um grande sinal no céu: uma mulher... sobre a cabeça uma coroa de doze estrelas.',
-        reference: 'Ap 12, 1',
+          'Apareceu em seguida um grande sinal no céu: uma Mulher revestida do sol, a lua debaixo dos seus pés e na cabeça uma coroa de doze estrelas. Alegrai-vos, justos, no Senhor, aos retos fica bem o louvor. Bendizei o Senhor, porque ele é bom, cantai ao seu nome, porque ele é amável.',
+        reference: 'Apocalipse 12, 1; Salmo 33, 1.3',
         meditation:
-          'Contemplemos Maria coroada Rainha do Céu e nossa intercessora.',
+          'Contemplemos Maria coroada Rainha do Céu e nossa intercessora poderosa. Confiemos em sua maternal proteção.',
       },
     ],
   },
@@ -158,44 +162,46 @@ const traditionalMysteriesData = {
         number: 1,
         title: 'O Batismo de Jesus no Rio Jordão',
         scripture:
-          "Depois que Jesus foi batizado, saiu logo da água. Eis que os céus se abriram e ele viu o Espírito de Deus descendo como pomba e vindo sobre ele. E do céu veio uma voz: 'Este é o meu Filho amado, em quem me comprazo'.",
-        reference: 'Mt 3, 16-17',
-        meditation: 'Contemplemos nosso batismo e nossa filiação divina.',
+          "Naqueles dias, Jesus veio de Nazaré da Galileia e foi batizado por João no Jordão. Logo ao sair da água, viu os céus se abrirem e o Espírito, qual pomba, descer sobre ele. E uma voz dos céus bradou: 'Tu és o meu Filho amado, em ti me comprazo'.",
+        reference: 'Marcos 1, 9-11',
+        meditation:
+          'Contemplemos nosso batismo e nossa filiação divina. Vivamos dignamente como filhos de Deus.',
       },
       {
         number: 2,
         title: 'As Bodas de Caná',
         scripture:
-          "A mãe de Jesus disse aos serventes: 'Fazei tudo o que ele vos disser'. Jesus disse: 'Enchei as talhas de água'. Eles as encheram até a borda. Disse-lhes: 'Tirai agora e levai ao mestre-sala'. E a água transformou-se em vinho.",
-        reference: 'Jo 2, 5-7.9',
+          "Três dias depois, houve um casamento em Caná da Galileia, e a mãe de Jesus estava lá. Jesus também foi convidado para o casamento, com os seus discípulos. Como faltasse vinho, a mãe de Jesus lhe disse: 'Eles não têm mais vinho'. Jesus respondeu-lhe: 'Mulher, isso compete a nós? Minha hora ainda não chegou'. Disse, então, sua mãe aos serventes: 'Fazei o que ele vos disser'. Havia ali seis talhas de pedra para as purificações dos judeus, contendo cada uma duas ou três medidas. Jesus disse-lhes: 'Enchei as talhas de água'. E encheram-nas até a borda. 'Tirai agora', disse-lhes Jesus, 'e levai ao mestre-sala'. E eles o fizeram. Logo que o mestre-sala provou da água tornada vinho, sem saber de onde era, embora o soubessem os serventes que haviam tirado a água, chamou o noivo e disse-lhe: 'Todo homem serve primeiro o vinho melhor e, depois de terem bebido bem, então o inferior. Mas tu guardaste o vinho melhor até agora'.",
+        reference: 'João 2, 1-10',
         meditation:
-          'Meditemos sobre a intercessão de Maria e os milagres de Jesus.',
+          'Meditemos sobre a intercessão de Maria e os milagres de Jesus. Peçamos a Maria que interceda por nossas necessidades.',
       },
       {
         number: 3,
         title: 'O Anúncio do Reino de Deus com o Convite à Conversão',
         scripture:
-          'O tempo já se completou e o Reino de Deus está próximo. Convertei-vos e crede no Evangelho.',
-        reference: 'Mc 1, 15',
-        meditation: 'Contemplemos o chamado à conversão e ao Reino de Deus.',
+          'Depois que João foi preso, Jesus foi para a Galileia, pregando o Evangelho de Deus e dizendo: "O tempo está cumprido e o Reino de Deus está próximo; fazei penitência e crede no Evangelho".',
+        reference: 'Marcos 1, 14-15',
+        meditation:
+          'Contemplemos o chamado à conversão e ao Reino de Deus. Convertamo-nos e vivamos segundo o Evangelho.',
       },
       {
         number: 4,
         title: 'A Transfiguração de Jesus',
         scripture:
-          'Jesus tomou consigo Pedro, Tiago e João, e os levou a um lugar à parte, sobre um alto monte. E transfigurou-se diante deles; seu rosto brilhou como o sol e suas roupas ficaram brancas como a luz.',
-        reference: 'Mt 17, 1-2',
+          'Seis dias depois, Jesus tomou consigo Pedro, Tiago e João, e levou-os sós, em particular, a um alto monte. E transfigurou-se diante deles. Suas vestes tornaram-se resplandecentes e de uma brancura tal, que nenhum lavadeiro sobre a terra as poderia fazer assim tão brancas. Apareceram-lhes Elias e Moisés, e falavam com Jesus. Pedro tomou a palavra e disse a Jesus: "Mestre, é bom estarmos aqui. Façamos três tendas: uma para ti, outra para Moisés e outra para Elias". Com efeito, não sabia o que dizia, pois estavam sobremaneira atemorizados. Formou-se então uma nuvem que os encobriu com sua sombra; e da nuvem veio uma voz: "Este é o meu Filho amado; ouvi-o".',
+        reference: 'Marcos 9, 2-7',
         meditation:
-          'Meditemos sobre a glória divina de Jesus revelada aos apóstolos.',
+          'Meditemos sobre a glória divina de Jesus revelada aos apóstolos. Escutemos a voz de Jesus em nossa vida.',
       },
       {
         number: 5,
         title: 'A Instituição da Eucaristia',
         scripture:
-          "Enquanto comiam, Jesus tomou o pão, pronunciou a bênção, partiu-o e deu aos discípulos, dizendo: 'Tomai e comei, isto é o meu corpo'. Tomou depois um cálice, deu graças e deu-lho, dizendo: 'Bebei dele todos; pois isto é o meu sangue, o sangue da aliança, derramado em favor de muitos para remissão dos pecados'.",
-        reference: 'Mt 26, 26-28',
+          'Durante a ceia, Jesus tomou o pão e, depois de ter dado graças, partiu-o e deu-lho, dizendo: "Isto é o meu corpo, que é dado por vós; fazei isto em memória de mim". Do mesmo modo tomou também o cálice, depois de ter ceado, dizendo: "Este cálice é a Nova Aliança em meu sangue, que é derramado por vós".',
+        reference: 'Lucas 22, 19-20',
         meditation:
-          'Contemplemos o dom da Eucaristia e a presença real de Jesus.',
+          'Contemplemos o dom da Eucaristia e a presença real de Jesus. Participemos da Eucaristia com fé e devoção.',
       },
     ],
   },
@@ -207,45 +213,46 @@ const traditionalMysteriesData = {
         number: 1,
         title: 'A Agonia de Jesus no Horto das Oliveiras',
         scripture:
-          "Então lhes disse: 'Minha alma está numa tristeza de morte. Ficai aqui e vigiai comigo'. Adiantando-se um pouco, prostrou-se com a face por terra e orava: 'Meu Pai, se é possível, afasta de mim este cálice. Todavia, faça-se não como eu quero, mas como tu queres'.",
-        reference: 'Mt 26, 38-39',
+          "Então Jesus chegou com eles a um lugar chamado Getsêmani e disse aos discípulos: 'Assentai-vos aqui, enquanto eu vou ali orar'. Tomando consigo Pedro e os dois filhos de Zebedeu, começou a entristecer-se e a angustiar-se. Disse-lhes então: 'Minha alma está triste até a morte. Ficai aqui e vigiai comigo'. Adiantando-se um pouco, prostrou-se com a face por terra, orando e dizendo: 'Meu Pai, se é possível, afasta de mim este cálice! Todavia, não seja como eu quero, mas sim como tu queres'.",
+        reference: 'Mateus 26, 36-39',
         meditation:
-          'Contemplemos a agonia de Jesus e sua total submissão à vontade do Pai.',
+          'Contemplemos a agonia de Jesus e sua total submissão à vontade do Pai. Ofereçamos nossas angústias e sofrimentos unidos aos de Cristo.',
       },
       {
         number: 2,
         title: 'A Flagelação de Jesus',
-        scripture: 'Pilatos então tomou Jesus e mandou flagelá-lo.',
-        reference: 'Jo 19, 1',
+        scripture:
+          'Pilatos então tomou Jesus e mandou flagelá-lo. Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: "Salve, rei dos judeus!". E davam-lhe bofetadas.',
+        reference: 'João 19, 1-3',
         meditation:
-          'Meditemos sobre os sofrimentos físicos que Jesus suportou por nossos pecados.',
+          'Meditemos sobre os sofrimentos físicos que Jesus suportou por nossos pecados. Peçamos perdão por nossas ofensas e a graça da conversão.',
       },
       {
         number: 3,
         title: 'A Coroação de Espinhos',
         scripture:
-          "Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: 'Salve, rei dos judeus!'.",
-        reference: 'Jo 19, 2-3',
+          'Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: "Salve, rei dos judeus!". E davam-lhe bofetadas. Pilatos saiu novamente e disse-lhes: "Eis que eu vo-lo trago fora, para saberdes que não acho nele crime algum". Saiu, pois, Jesus, trazendo a coroa de espinhos e o manto de púrpura. Disse-lhes Pilatos: "Eis o homem!".',
+        reference: 'João 19, 2-5',
         meditation:
-          'Contemplemos a paciência de Jesus diante das humilhações e zombarias.',
+          'Contemplemos a paciência de Jesus diante das humilhações e zombarias. Aceitemos as humilhações com mansidão e perdão.',
       },
       {
         number: 4,
         title: 'Jesus Carrega a Cruz',
         scripture:
-          'Então Pilatos o entregou para ser crucificado. Tomaram, pois, a Jesus, que, carregando a sua cruz, saiu para o lugar chamado Calvário.',
-        reference: 'Jo 19, 16-17',
+          'Pilatos então o entregou para ser crucificado. Tomaram, pois, a Jesus. Carregando ele mesmo a cruz, saiu para o lugar chamado Calvário, que em hebraico se chama Gólgota. Seguia-o grande multidão do povo e de mulheres que batiam no peito e o lamentavam. Voltando-se para elas, Jesus disse: "Filhas de Jerusalém, não choreis por mim, mas chorai por vós mesmas e por vossos filhos".',
+        reference: 'João 19, 16-17; Lucas 23, 27-28',
         meditation:
-          'Meditemos sobre a força de Jesus para carregar nossa cruz de pecados.',
+          'Meditemos sobre a força e o amor de Jesus ao carregar nossa cruz de pecados. Carreguemos nossa cruz diária com coragem e amor.',
       },
       {
         number: 5,
         title: 'A Crucificação e Morte de Jesus',
         scripture:
-          "Chegados ao lugar chamado Calvário, ali o crucificaram. [...] Jesus exclamou com voz forte: 'Pai, em tuas mãos entrego o meu espírito'. E, dizendo isso, expirou.",
-        reference: 'Lc 23, 33.46',
+          'Quando chegaram ao lugar chamado Calvário, ali o crucificaram, bem como aos malfeitores, um à direita e outro à esquerda. Jesus, porém, dizia: "Pai, perdoa-lhes, porque não sabem o que fazem". Era quase à hora sexta e as trevas cobriram toda a terra até a hora nona. O sol se eclipsou. O véu do Templo rasgou-se pelo meio. Jesus deu um forte grito: "Pai, em tuas mãos entrego o meu espírito". E, dizendo isso, expirou.',
+        reference: 'Lucas 23, 33-34.44-46',
         meditation:
-          'Contemplemos o supremo sacrifício de Jesus por nossa salvação.',
+          'Contemplemos o supremo sacrifício de Jesus por nossa salvação. Agradeçamos o dom inestimável da Redenção e vivamos em santidade.',
       },
     ],
   },
@@ -257,46 +264,46 @@ const traditionalMysteriesData = {
         number: 1,
         title: 'A Anunciação',
         scripture:
-          "O anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem... O anjo lhe disse: 'Ave, cheia de graça, o Senhor está contigo'.",
-        reference: 'Lc 1, 26-28',
+          "No sexto mês, o anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um varão chamado José, da casa de Davi; e o nome da virgem era Maria. Entrando onde ela estava, disse-lhe: 'Alegra-te, cheia de graça, o Senhor está contigo'. Ela ficou intrigada com essa palavra e pôs-se a pensar qual seria o significado da saudação. O anjo, porém, acrescentou: 'Não temas, Maria! Encontraste graça junto de Deus. Eis que conceberás no teu seio e darás à luz um filho, e tu o chamarás com o nome de Jesus'.",
+        reference: 'Lucas 1, 26-31',
         meditation:
-          'Contemplemos a humildade e obediência de Maria ao aceitar ser a Mãe de Deus.',
+          'Contemplemos a humildade e obediência de Maria ao aceitar ser a Mãe de Deus. Peçamos a graça de sermos dóceis à vontade divina em nossa vida.',
       },
       {
         number: 2,
         title: 'A Visitação',
         scripture:
-          'Maria partiu para a região montanhosa, dirigindo-se, apressadamente, a uma cidade de Judá. Entrou na casa de Zacarias e saudou Isabel. Quando Isabel ouviu a saudação de Maria, a criança lhe estremeceu no ventre.',
-        reference: 'Lc 1, 39-41',
+          'Naqueles dias, Maria se levantou e foi às pressas às montanhas, a uma cidade de Judá. Entrou em casa de Zacarias e saudou Isabel. Ora, quando Isabel ouviu a saudação de Maria, a criança estremeceu no seu seio e Isabel ficou repleta do Espírito Santo. E exclamou em alta voz: "Bendita és tu entre as mulheres e bendito é o fruto do teu ventre! Donde me vem esta graça de vir a mim a mãe do meu Senhor? Pois quando a voz da tua saudação chegou aos meus ouvidos, a criança estremeceu de alegria no meu seio".',
+        reference: 'Lucas 1, 39-44',
         meditation:
-          'Meditemos sobre a caridade de Maria em visitar e ajudar sua prima Isabel.',
+          'Meditemos sobre a caridade de Maria em visitar e ajudar sua prima Isabel. Peçamos a graça de servir ao próximo com prontidão e amor generoso.',
       },
       {
         number: 3,
         title: 'O Nascimento de Jesus',
         scripture:
-          'Enquanto lá estavam, completaram-se os dias dela. E Maria deu à luz seu filho primogênito, envolveu-o em faixas e deitou-o numa manjedoura, porque não havia lugar para eles na hospedaria.',
-        reference: 'Lc 2, 6-7',
+          'Aconteceu que, estando eles ali, completaram-se os dias dela. E deu à luz o seu filho primogênito, e enfaixou-o e reclinou-o numa manjedoura, porque não havia lugar para eles na sala. Havia nessa região pastores que viviam nos campos e guardavam o seu rebanho durante as vigílias da noite. Um anjo do Senhor apareceu-lhes e a glória do Senhor refulgiu ao redor deles; e ficaram possuídos de grande temor. O anjo disse-lhes: "Não temais, eis que vos anuncio uma boa-nova que será uma grande alegria para todo o povo: hoje vos nasceu um Salvador, que é o Cristo Senhor, na cidade de Davi".',
+        reference: 'Lucas 2, 6-11',
         meditation:
-          'Contemplemos a simplicidade e pobreza do nascimento do Salvador.',
+          'Contemplemos a simplicidade e pobreza do nascimento do Salvador. Abramos nosso coração para acolher Jesus com humildade.',
       },
       {
         number: 4,
         title: 'A Apresentação no Templo',
         scripture:
-          "Levaram-no a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na lei do Senhor: 'Todo primogênito do sexo masculino será consagrado ao Senhor'.",
-        reference: 'Lc 2, 22-23',
+          "Quando se completaram os dias para a purificação deles segundo a Lei de Moisés, levaram-no a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na Lei do Senhor: 'Todo primogênito do sexo masculino será consagrado ao Senhor', e para oferecerem o sacrifício prescrito pela Lei do Senhor, um par de rolas ou dois pombinhos. Havia em Jerusalém um homem chamado Simeão. Este homem, justo e piedoso, esperava a consolação de Israel, e o Espírito Santo estava nele.",
+        reference: 'Lucas 2, 22-25',
         meditation:
-          'Meditemos sobre a obediência de Maria e José à lei de Deus.',
+          'Meditemos sobre a obediência de Maria e José à lei de Deus. Consagremos nossa vida inteiramente ao Senhor.',
       },
       {
         number: 5,
         title: 'A Perda e o Encontro de Jesus no Templo',
         scripture:
-          'Três dias depois, encontraram-no no templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam estupefatos com sua inteligência e suas respostas.',
-        reference: 'Lc 2, 46-47',
+          'Decorridos três dias, encontraram-no no Templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam extasiados com a sua inteligência e com as suas respostas. Ao vê-lo, ficaram surpresos, e sua mãe lhe disse: "Filho, por que agiste assim conosco? Eis que teu pai e eu, angustiados, te procurávamos". Respondeu-lhes ele: "Por que me procuráveis? Não sabíeis que devo ocupar-me das coisas de meu Pai?".',
+        reference: 'Lucas 2, 46-49',
         meditation:
-          'Contemplemos Jesus dedicado às coisas de seu Pai celestial.',
+          'Contemplemos Jesus dedicado às coisas de seu Pai celestial. Busquemos fazer sempre a vontade de Deus em primeiro lugar.',
       },
     ],
   },
@@ -308,442 +315,52 @@ const traditionalMysteriesData = {
         number: 1,
         title: 'A Ressurreição de Jesus',
         scripture:
-          "O anjo disse às mulheres: 'Não tenhais medo! Sei que procurais Jesus, que foi crucificado. Ele não está aqui, pois ressuscitou, como havia dito. Vinde ver o lugar onde ele estava'.",
-        reference: 'Mt 28, 5-6',
+          "Passado o sábado, Maria Madalena, Maria, mãe de Tiago, e Salomé compraram aromas para ungir Jesus. No primeiro dia da semana, muito cedo, ao nascer do sol, foram ao sepulcro. Diziam entre si: 'Quem nos removerá a pedra da entrada do sepulcro?'. Levantando os olhos, viram que a pedra já estava removida; e era muito grande. Entrando no sepulcro, viram um jovem sentado à direita, vestido de branco, e ficaram surpreendidas. Ele lhes disse: 'Não vos assusteis! Procurais Jesus de Nazaré, que foi crucificado. Ressuscitou, não está aqui. Eis o lugar onde o puseram'.",
+        reference: 'Marcos 16, 1-6',
         meditation:
-          'Contemplemos a vitória de Jesus sobre a morte e nossa esperança de vida eterna.',
+          'Contemplemos a vitória de Jesus sobre a morte e nossa esperança de vida eterna. Vivamos a alegria pascal da Ressurreição.',
       },
       {
         number: 2,
         title: 'A Ascensão de Jesus ao Céu',
         scripture:
-          'Enquanto os abençoava, afastou-se deles e foi elevado ao céu.',
-        reference: 'Lc 24, 51',
-        meditation: 'Meditemos sobre Jesus preparando-nos um lugar no céu.',
+          'Jesus levou os discípulos até perto de Betânia e, erguendo as mãos, abençoou-os. Ora, enquanto os abençoava, separou-se deles e foi elevado ao céu. Eles, depois de se terem prostrado diante dele, voltaram a Jerusalém com grande alegria. E estavam continuamente no Templo bendizendo a Deus.',
+        reference: 'Lucas 24, 50-53',
+        meditation:
+          'Meditemos sobre Jesus preparando-nos um lugar no céu. Vivamos com os olhos fixos na Pátria celestial.',
       },
       {
         number: 3,
         title: 'A Vinda do Espírito Santo',
         scripture:
-          'De repente, veio do céu um ruído, como de um vento impetuoso, e encheu toda a casa onde se encontravam. Então apareceram línguas como de fogo, que se repartiram e pousaram sobre cada um deles. Todos ficaram cheios do Espírito Santo.',
-        reference: 'At 2, 2-4',
-        meditation: 'Contemplemos os dons do Espírito Santo em nossa vida.',
+          'Chegando o dia de Pentecostes, estavam todos reunidos no mesmo lugar. De repente, veio do céu um ruído, como que de um vento impetuoso, e encheu toda a casa onde estavam sentados. Apareceram-lhes então línguas como de fogo, que se repartiram e repousaram sobre cada um deles. Ficaram todos cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito Santo lhes concedia que falassem.',
+        reference: 'Atos 2, 1-4',
+        meditation:
+          'Contemplemos os dons do Espírito Santo em nossa vida. Abramos o coração para receber os dons e frutos do Espírito.',
       },
       {
         number: 4,
         title: 'A Assunção de Nossa Senhora',
         scripture:
-          'Uma grande sinal apareceu no céu: uma mulher vestida de sol, tendo a lua debaixo dos pés e sobre a cabeça uma coroa de doze estrelas.',
-        reference: 'Ap 12, 1',
+          'Apareceu em seguida um grande sinal no céu: uma Mulher revestida do sol, a lua debaixo dos seus pés e na cabeça uma coroa de doze estrelas. Estava grávida e gritava de dores, sentindo as angústias de dar à luz. Viu-se também outro sinal no céu: um grande Dragão vermelho, com sete cabeças e dez chifres, e nas cabeças sete coroas.',
+        reference: 'Apocalipse 12, 1-3',
         meditation:
-          'Meditemos sobre a glorificação de Maria em corpo e alma no céu.',
+          'Meditemos sobre a glorificação de Maria em corpo e alma no céu. Peçamos sua intercessão para alcançarmos a glória celeste.',
       },
       {
         number: 5,
         title: 'A Coroação de Nossa Senhora como Rainha do Céu e da Terra',
         scripture:
-          'Apareceu, então, um grande sinal no céu: uma mulher... sobre a cabeça uma coroa de doze estrelas.',
-        reference: 'Ap 12, 1',
+          'Apareceu em seguida um grande sinal no céu: uma Mulher revestida do sol, a lua debaixo dos seus pés e na cabeça uma coroa de doze estrelas. Alegrai-vos, justos, no Senhor, aos retos fica bem o louvor. Bendizei o Senhor, porque ele é bom, cantai ao seu nome, porque ele é amável.',
+        reference: 'Apocalipse 12, 1; Salmo 33, 1.3',
         meditation:
-          'Contemplemos Maria coroada Rainha do Céu e nossa intercessora.',
+          'Contemplemos Maria coroada Rainha do Céu e nossa intercessora poderosa. Confiemos em sua maternal proteção.',
       },
     ],
   },
 };
 
-const holyWoundsMeditationsData = {
-  segunda: {
-    title: 'Terço das Santas Chagas - Segunda-feira',
-    menuLabel: 'Segunda-feira',
-    mysteries: [
-      {
-        number: 1,
-        title: 'Jesus perdoa a mulher adúltera',
-        scripture:
-          'Os escribas e fariseus trouxeram-lhe uma mulher surpreendida em adultério e disseram-lhe: "Mestre, esta mulher foi apanhada em flagrante adultério." Jesus disse-lhe: "Nem eu te condeno. Vai e de agora em diante não peques mais."',
-        reference: 'Jo 8, 3-5.11',
-        meditation:
-          'Contemple a misericórdia que brota das Santas Chagas e alcança quem se volta para o Senhor com arrependimento.',
-      },
-      {
-        number: 2,
-        title: 'Jesus se oferece como água viva',
-        scripture:
-          'Jesus respondeu-lhe: "Se conhecesses o dom de Deus e quem é que te diz: Dá-me de beber, tu é que lhe pedirias e ele te daria água viva. Aquele que beber da água que eu lhe darei jamais terá sede. A água que eu lhe der se tornará nele uma fonte de água jorrando para a vida eterna."',
-        reference: 'Jo 4, 9-10.13-14',
-        meditation:
-          'Medite na fonte de graça e vida nova que jorra do lado aberto de Cristo.',
-      },
-      {
-        number: 3,
-        title: 'Jesus consola a irmã de Lázaro',
-        scripture:
-          'Marta disse a Jesus: "Senhor, se estivesses aqui, meu irmão não teria morrido." Jesus disse-lhe: "Eu sou a ressurreição e a vida. Quem crê em mim, ainda que morra, viverá. E todo aquele que vive e crê em mim não morrerá jamais."',
-        reference: 'Jo 11, 21-25',
-        meditation:
-          'Entregue a Jesus suas dores e deixe que Ele fortaleça a esperança do seu coração.',
-      },
-      {
-        number: 4,
-        title: 'Jesus se manifesta como o Bom Pastor',
-        scripture:
-          'Eu sou o bom pastor. Conheço as minhas ovelhas e as minhas ovelhas me conhecem, assim como o Pai me conhece e eu conheço o Pai. Eu dou a minha vida pelas ovelhas. As minhas ovelhas ouvem a minha voz; eu as conheço e elas me seguem.',
-        reference: 'Jo 10, 14-15.27',
-        meditation:
-          'Recorde que o Bom Pastor entregou a vida por suas ovelhas e nos guia por amor.',
-      },
-      {
-        number: 5,
-        title: 'Jesus perdoa o bom ladrão',
-        scripture:
-          'Um dos malfeitores crucificados o insultava. Mas o outro o repreendeu, dizendo: "Jesus, lembra-te de mim quando entrares no teu Reino." Jesus respondeu-lhe: "Em verdade te digo: hoje estarás comigo no Paraíso."',
-        reference: 'Lc 23, 39-43',
-        meditation:
-          'Peça a graça da confiança humilde naquele que salva até no último instante.',
-      },
-    ],
-  },
-  terca: {
-    title: 'Terço das Santas Chagas - Terça-feira',
-    menuLabel: 'Terça-feira',
-    mysteries: [
-      {
-        number: 1,
-        title: 'Traição de Judas e prisão de Jesus',
-        scripture:
-          'Ainda falava, quando apareceu uma multidão. O chamado Judas, um dos Doze, ia à frente e aproximou-se de Jesus para beijá-lo. Jesus, porém, lhe disse: "Judas, é com um beijo que entregas o Filho do Homem?" Prenderam-no e o levaram.',
-        reference: 'Lc 22, 47-48.54a',
-        meditation:
-          'Contemple o Coração fiel de Cristo mesmo diante da traição e peça perseverança na fidelidade.',
-      },
-      {
-        number: 2,
-        title: 'Condenação de Jesus à morte',
-        scripture:
-          'Pilatos perguntou-lhes: "Que quereis, então, que eu faça daquele a quem chamais o rei dos judeus?" Eles gritaram de novo: "Crucifica-o!" Pilatos, querendo contentar a multidão, soltou-lhes Barrabás; e entregou Jesus, depois de o ter mandado flagelar, para ser crucificado.',
-        reference: 'Mc 15, 12-15',
-        meditation:
-          'Ofereça esta dezena pelos que sofrem injustiças e por quem se afastou da verdade.',
-      },
-      {
-        number: 3,
-        title: 'Jesus é pregado na Cruz',
-        scripture:
-          'Conduziram Jesus ao lugar chamado Gólgota, que quer dizer "Lugar do Crânio". Deram-lhe vinho misturado com mirra, mas ele não o tomou. Então o crucificaram. Era a hora terceira quando o crucificaram.',
-        reference: 'Mc 15, 22-25',
-        meditation:
-          'Adore o amor de Cristo que se deixa ferir para curar as nossas almas.',
-      },
-      {
-        number: 4,
-        title: 'Entregando-se ao Pai, Jesus morre na Cruz',
-        scripture:
-          'Era já cerca da hora sexta e houve trevas sobre toda a terra até a hora nona, tendo-se eclipsado o sol. Rasgou-se ao meio o véu do santuário. Jesus exclamou em voz forte: "Pai, em tuas mãos entrego o meu espírito." Dizendo isso, expirou.',
-        reference: 'Lc 23, 44-46',
-        meditation:
-          'Una suas intenções ao sacrifício perfeito de Jesus e confie sua vida ao Pai.',
-      },
-      {
-        number: 5,
-        title: 'Jesus é transpassado pela lança do soldado',
-        scripture:
-          'Os soldados foram e quebraram as pernas do primeiro e depois do outro que com ele fora crucificado. Chegando a Jesus e vendo que já estava morto, não lhe quebraram as pernas, mas um dos soldados abriu-lhe o lado com uma lança, e logo saiu sangue e água.',
-        reference: 'Jo 19, 32-34',
-        meditation:
-          'Contemple o Sangue e a Água que jorram do lado aberto de Cristo para a salvação do mundo.',
-      },
-    ],
-  },
-  quarta: {
-    title: 'Terço das Santas Chagas - Quarta-feira',
-    menuLabel: 'Quarta-feira',
-    mysteries: [
-      {
-        number: 1,
-        title: 'Jesus Ressuscitado aparece a Maria Madalena',
-        scripture:
-          'Jesus perguntou-lhe: "Mulher, por que choras? A quem procuras?" Ela, pensando que era o jardineiro, disse-lhe: "Senhor, se tu o levaste, dize-me onde o puseste e eu o irei buscar." Jesus disse-lhe: "Maria!" Ela voltou-se e exclamou: "Rabûni!" (que quer dizer Mestre).',
-        reference: 'Jo 20, 15-16',
-        meditation:
-          'Contemple a ternura do Ressuscitado que chama cada alma pelo nome.',
-      },
-      {
-        number: 2,
-        title: 'Jesus Ressuscitado acompanha os discípulos de Emaús',
-        scripture:
-          'Naquele mesmo dia, dois deles iam para um povoado chamado Emaús, distante sessenta estádios de Jerusalém, e conversavam entre si sobre tudo o que havia acontecido. Enquanto conversavam e discutiam, o próprio Jesus se aproximou e pôs-se a caminhar com eles.',
-        reference: 'Lc 24, 13-15',
-        meditation:
-          'Peça que Jesus caminhe com você e aqueça o seu coração pela Palavra.',
-      },
-      {
-        number: 3,
-        title: 'Jesus aparece aos discípulos desejando a paz',
-        scripture:
-          'Jesus apresentou-se no meio deles e disse-lhes: "A paz esteja convosco!" Perturbados e assustados, pensavam ver um espírito. Disse-lhes: "Vede as minhas mãos e os meus pés: sou eu mesmo! Apalpai-me e vede." E mostrou-lhes as mãos e os pés.',
-        reference: 'Lc 24, 36-40',
-        meditation:
-          'Receba a paz que sai das Santas Chagas gloriosas do Senhor.',
-      },
-      {
-        number: 4,
-        title: 'Jesus cura a incredulidade de Tomé',
-        scripture:
-          'Oito dias depois, estavam os discípulos reunidos e Tomé com eles. Jesus veio e disse: "A paz esteja convosco!" Depois disse a Tomé: "Põe aqui o teu dedo e vê as minhas mãos. Estende a tua mão e põe-na no meu lado. E não sejas incrédulo, mas crente." Tomé respondeu-lhe: "Meu Senhor e meu Deus!"',
-        reference: 'Jo 20, 26-28',
-        meditation:
-          'Suplique uma fé firme ao contemplar as chagas glorificadas de Cristo.',
-      },
-      {
-        number: 5,
-        title: 'Jesus envia em missão',
-        scripture:
-          'Jesus aproximou-se e disse-lhes: "Toda autoridade me foi dada no céu e na terra. Ide, portanto, e fazei que todas as nações se tornem discípulos, batizando-as em nome do Pai e do Filho e do Espírito Santo, ensinando-as a observar tudo quanto vos ordenei. E eis que estou convosco todos os dias até a consumação dos séculos."',
-        reference: 'Mt 28, 16-20',
-        meditation:
-          'Ofereça esta dezena para que a Igreja anuncie o Evangelho com coragem e amor.',
-      },
-    ],
-  },
-  quinta: {
-    title: 'Terço das Santas Chagas - Quinta-feira',
-    menuLabel: 'Quinta-feira',
-    mysteries: [
-      {
-        number: 1,
-        title: 'Jesus se revela como Caminho, Verdade e Vida',
-        scripture:
-          'Jesus respondeu-lhe: "Eu sou o Caminho, a Verdade e a Vida. Ninguém vai ao Pai senão por mim."',
-        reference: 'Jo 14, 6',
-        meditation:
-          'Renove sua decisão de seguir Jesus com todo o coração.',
-      },
-      {
-        number: 2,
-        title: 'Jesus cura o cego Bartimeu',
-        scripture:
-          'Bartimeu, o cego, filho de Timeu, estava sentado à beira do caminho pedindo esmolas. Ao saber que era Jesus de Nazaré, começou a gritar: "Filho de Davi, Jesus, tem compaixão de mim!" Jesus disse-lhe: "Vai, a tua fé te salvou." No mesmo instante, recuperou a vista e seguia-o pelo caminho.',
-        reference: 'Mc 10, 46-53',
-        meditation:
-          'Peça ao Senhor olhos abertos para reconhecer sua presença e sua vontade.',
-      },
-      {
-        number: 3,
-        title: 'Jesus se apresenta como o Tronco da Videira',
-        scripture:
-          'Eu sou a videira verdadeira e meu Pai é o agricultor. Todo ramo que em mim não dá fruto, ele o corta; e todo ramo que dá fruto, ele o poda para que dê mais fruto ainda. Permanecei em mim e eu permanecerei em vós. Como o ramo não pode dar fruto por si mesmo, se não permanecer na videira, assim também vós, se não permanecerdes em mim.',
-        reference: 'Jo 15, 1-6',
-        meditation:
-          'Permaneça unido a Cristo, fonte de vida, graça e fecundidade espiritual.',
-      },
-      {
-        number: 4,
-        title: 'Jesus encontra Zaqueu',
-        scripture:
-          'Havia um homem chamado Zaqueu; era chefe dos publicanos e era rico. Procurava ver quem era Jesus, mas não o conseguia por causa da multidão, pois era de pequena estatura. Subiu a um sicômoro. Quando Jesus chegou àquele lugar, levantou os olhos e disse-lhe: "Zaqueu, desce depressa, pois hoje devo ficar em tua casa."',
-        reference: 'Lc 19, 1-10',
-        meditation:
-          'Abra o coração para a visita de Jesus e para uma conversão concreta.',
-      },
-      {
-        number: 5,
-        title: 'Jesus anda sobre as águas',
-        scripture:
-          'Na quarta vigília da noite, Jesus veio até eles, andando sobre o mar. Os discípulos ficaram perturbados e disseram: "É um fantasma!" Jesus logo lhes disse: "Tende confiança! Sou eu; não tenhais medo!" Pedro disse: "Senhor, se és tu, manda-me ir até ti sobre as águas." Jesus disse: "Vem!"',
-        reference: 'Mt 14, 22-33',
-        meditation:
-          'Entregue seus medos ao Senhor que domina toda tempestade.',
-      },
-    ],
-  },
-  sexta: {
-    title: 'Terço das Santas Chagas - Sexta-feira',
-    menuLabel: 'Sexta-feira',
-    mysteries: [
-      {
-        number: 1,
-        title: 'Tristeza Mortal e Agonia de Jesus no Getsêmani',
-        scripture:
-          'Afastou-se deles à distância de um tiro de pedra e, de joelhos, orava dizendo: "Pai, se queres, afasta de mim este cálice! Contudo, não se faça a minha vontade, mas a tua." Apareceu-lhe então um anjo do céu que o confortava. Entrando em agonia, orava mais intensamente; e o seu suor tornou-se como gotas de sangue que caíam por terra.',
-        reference: 'Lc 22, 41-46',
-        meditation:
-          'Una sua oração à agonia redentora de Cristo e vigie com Ele.',
-      },
-      {
-        number: 2,
-        title: 'Jesus carrega a Cruz',
-        scripture:
-          'Tomaram, pois, a Jesus, que, carregando a sua própria cruz, saiu para o lugar chamado Crânio, em hebraico Gólgota, onde o crucificaram, e com ele outros dois, um de cada lado, e Jesus no meio.',
-        reference: 'Jo 19, 17-18',
-        meditation:
-          'Ofereça suas cruzes cotidianas junto com as Santas Chagas do Senhor.',
-      },
-      {
-        number: 3,
-        title: 'A crucificação de Jesus',
-        scripture:
-          'Chegados ao lugar chamado Calvário, ali o crucificaram, bem como os malfeitores, um à direita e outro à esquerda. Jesus dizia: "Pai, perdoa-lhes: não sabem o que fazem."',
-        reference: 'Lc 23, 33-34',
-        meditation:
-          'Contemple o perdão derramado do alto da Cruz sobre toda a humanidade.',
-      },
-      {
-        number: 4,
-        title: 'Jesus que nos dá a Sua Mãe, como nossa Mãe',
-        scripture:
-          'Junto à cruz de Jesus estavam sua mãe, a irmã de sua mãe, Maria de Clopas, e Maria Madalena. Jesus, vendo a mãe e junto a ela o discípulo a quem amava, disse à mãe: "Mulher, eis o teu filho." Depois disse ao discípulo: "Eis a tua mãe." E desde aquela hora o discípulo a acolheu em sua casa.',
-        reference: 'Jo 19, 25-27',
-        meditation:
-          'Receba Maria em sua casa e deixe-se conduzir por ela até Jesus.',
-      },
-      {
-        number: 5,
-        title: 'A morte de Jesus na Cruz',
-        scripture:
-          'Era já cerca da hora sexta e houve trevas sobre toda a terra até a hora nona, tendo-se eclipsado o sol. O véu do santuário rasgou-se ao meio. Jesus exclamou em voz forte: "Pai, em tuas mãos entrego o meu espírito." E, dizendo isso, expirou. O centurião, vendo o que acontecera, glorificou a Deus, dizendo: "Realmente este homem era justo."',
-        reference: 'Lc 23, 44-49',
-        meditation:
-          'Adore o amor extremo de Cristo que entrega a própria vida por nossa salvação.',
-      },
-    ],
-  },
-  sabado: {
-    title: 'Terço das Santas Chagas - Sábado',
-    menuLabel: 'Sábado',
-    mysteries: [
-      {
-        number: 1,
-        title: 'A Ressurreição de Jesus',
-        scripture:
-          'No primeiro dia da semana, bem de madrugada, foram ao túmulo levando os aromas que haviam preparado. Encontraram a pedra removida do túmulo, mas, ao entrar, não encontraram o corpo do Senhor Jesus. Dois homens com vestes resplandecentes disseram-lhes: "Por que buscais entre os mortos aquele que está vivo? Ele não está aqui; ressuscitou."',
-        reference: 'Lc 24, 1-7',
-        meditation:
-          'Contemple a vitória do Ressuscitado e a esperança que nasce de suas Santas Chagas gloriosas.',
-      },
-      {
-        number: 2,
-        title:
-          'Jesus aparece pela terceira vez aos discípulos e manda-os jogar a rede para o outro lado',
-        scripture:
-          'Jesus disse-lhes: "Lançai a rede à direita da barca e encontrareis." Lançaram-na e já não podiam puxá-la para fora, por causa da quantidade de peixes. O discípulo a quem Jesus amava disse a Pedro: "É o Senhor!" Era a terceira vez que Jesus se manifestava aos discípulos depois de ressuscitar dos mortos.',
-        reference: 'Jo 21, 1-14',
-        meditation:
-          'Escute a voz do Senhor e confie inteiramente na sua direção.',
-      },
-      {
-        number: 3,
-        title:
-          'Primado de Pedro: “Tu me amas? Apascenta as minhas ovelhas”',
-        scripture:
-          'Depois de terem comido, Jesus disse a Simão Pedro: "Simão, filho de João, tu me amas mais do que estes?" Ele respondeu: "Sim, Senhor, tu sabes que te amo." Jesus disse-lhe: "Apascenta os meus cordeiros." Disse-lhe pela terceira vez: "Simão, filho de João, tu me amas?" Pedro disse-lhe: "Senhor, tu sabes tudo; tu sabes que te amo." Jesus disse-lhe: "Apascenta as minhas ovelhas."',
-        reference: 'Jo 21, 15-19',
-        meditation:
-          'Reze pelo Papa, pela Igreja e por todos os pastores do povo de Deus.',
-      },
-      {
-        number: 4,
-        title: 'Meditação livre nas aparições do Ressuscitado',
-        scripture:
-          'Depois da sua paixão, Jesus mostrou-se vivo aos apóstolos com muitas provas, aparecendo-lhes durante quarenta dias e falando das coisas referentes ao Reino de Deus.',
-        reference: 'At 1, 3',
-        meditation:
-          'Retome os encontros de Jesus Ressuscitado e permaneça em silêncio adorando o Senhor vitorioso.',
-      },
-      {
-        number: 5,
-        title: 'Meditação livre no envio missionário do Ressuscitado',
-        scripture:
-          'Recebereis uma força, a do Espírito Santo, que descerá sobre vós, e sereis minhas testemunhas em Jerusalém, em toda a Judeia e a Samaria, e até os confins da terra.',
-        reference: 'At 1, 8',
-        meditation:
-          'Ofereça esta última dezena para viver e anunciar o Evangelho com fidelidade.',
-      },
-    ],
-  },
-  domingo: {
-    title: 'Terço das Santas Chagas - Domingo',
-    menuLabel: 'Domingo',
-    mysteries: [
-      {
-        number: 1,
-        title: 'A Ressurreição gloriosa de Jesus',
-        scripture:
-          'Depois do sábado, ao amanhecer do primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro. O anjo disse às mulheres: "Não tenhais medo! Sei que procurais Jesus, o Crucificado. Ele não está aqui, pois ressuscitou como havia dito. Vinde ver o lugar onde ele jazia."',
-        reference: 'Mt 28, 1-7',
-        meditation:
-          'Contemple a vitória definitiva de Cristo sobre a morte e as chagas que brilham em seu corpo glorioso.',
-      },
-      {
-        number: 2,
-        title: 'Jesus se manifesta aos discípulos e mostra suas Chagas',
-        scripture:
-          'Jesus apresentou-se no meio deles e disse-lhes: "A paz esteja convosco!" Perturbados e assustados, pensavam ver um espírito. Mas ele disse: "Vede as minhas mãos e os meus pés: sou eu mesmo. Apalpai-me e vede: um espírito não tem carne nem ossos, como vedes que eu tenho." E mostrou-lhes as mãos e os pés.',
-        reference: 'Lc 24, 36-40',
-        meditation:
-          'Adore as Santas Chagas gloriosas, sinal eterno do amor redentor de Cristo.',
-      },
-      {
-        number: 3,
-        title: 'A Ascensão do Senhor',
-        scripture:
-          'Dito isto, foi elevado à vista deles, e uma nuvem o ocultou a seus olhos. Estando eles com os olhos fixos no céu, dois homens vestidos de branco disseram-lhes: "Homens da Galileia, por que ficais aí olhando para o céu? Esse Jesus que vos foi arrebatado para o céu virá do mesmo modo como o vistes partir para o céu."',
-        reference: 'At 1, 9-11',
-        meditation:
-          'Eleve seu coração ao Céu onde Cristo intercede por nós com suas Santas Chagas.',
-      },
-      {
-        number: 4,
-        title: 'A vinda do Espírito Santo',
-        scripture:
-          'Quando chegou o dia de Pentecostes, estavam todos reunidos no mesmo lugar. De repente, veio do céu um ruído como de um vento impetuoso e encheu toda a casa. Apareceram-lhes línguas como de fogo, que se repartiram e pousaram sobre cada um deles. Todos ficaram repletos do Espírito Santo.',
-        reference: 'At 2, 1-4',
-        meditation:
-          'Peça ao Espírito Santo que renove em você a devoção às Santas Chagas de Jesus.',
-      },
-      {
-        number: 5,
-        title: 'Jesus reina glorioso e intercede por nós',
-        scripture:
-          'Por isso, ele é capaz de salvar definitivamente aqueles que, por meio dele, se aproximam de Deus, pois está sempre vivo para interceder a favor deles.',
-        reference: 'Hb 7, 25',
-        meditation:
-          'Confie na intercessão permanente de Cristo que apresenta ao Pai suas Chagas por nossa salvação.',
-      },
-    ],
-  },
-};
-
-const prayers = {
-  signalOfCross: 'Em nome do Pai, e do Filho, e do Espírito Santo. Amém.',
-  offering:
-    'Divino Jesus, nós Vos oferecemos este terço que vamos rezar, meditando nos mistérios da Vossa Redenção. Concedei-nos, por intercessão da Virgem Maria, Vossa Mãe, as virtudes que nos são necessárias para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção.',
-  creed:
-    'Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na santa Igreja Católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.',
-  ourFather:
-    'Pai nosso que estais nos céus, santificado seja o vosso nome; venha a nós o vosso reino; seja feita a vossa vontade assim na terra como no céu; o pão nosso de cada dia nos dai hoje; perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido; e não nos deixeis cair em tentação, mas livrai-nos do mal. Amém.',
-  hailMary:
-    'Ave Maria, cheia de graça, o Senhor é convosco; bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós pecadores, agora e na hora da nossa morte. Amém.',
-  glory:
-    'Glória ao Pai, ao Filho e ao Espírito Santo, assim como era no princípio, agora e sempre. Amém.',
-  fatima:
-    'Ó meu Jesus, perdoai-nos, livrai-nos do fogo do inferno, levai as almas todas para o céu, principalmente as que mais precisarem da vossa misericórdia. Mãe de Deus, derramai sobre a humanidade inteira as graças eficazes da Vossa chama de amor, agora e na hora da nossa morte. Amém.',
-  infiniteGraces:
-    'Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre, tomar-nos debaixo de vosso poderoso amparo; e, para mais vos obrigar, vos saudamos com uma Salve Rainha.',
-  hailHolyQueen:
-    'Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos, os degredados filhos de Eva; a vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei; e depois deste desterro, mostrai-nos Jesus, bendito fruto do vosso ventre. Ó clemente, ó piedosa, ó doce sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus, para que sejamos dignos das promessas de Cristo. Amém.',
-  holyWoundsRedeemer:
-    'Ó Jesus, Divino Redentor, tende Misericórdia de nós e do mundo inteiro.',
-  holyWoundsTrisagion:
-    'Deus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo inteiro.',
-  holyWoundsBlood:
-    'Graça, Misericórdia, meu Jesus; nos perigos presentes, cobri-nos com Vosso Preciosíssimo Sangue.',
-  holyWoundsSupplication:
-    'Eterno Pai, tende Misericórdia de nós, pelo Sangue de Jesus Cristo, Vosso Filho Unigênito, tende Misericórdia de nós, Vos suplicamos. Amém.',
-  holyWoundsLargeBead:
-    'Eterno Pai, eu Vos ofereço as Santas Chagas de Nosso Senhor Jesus Cristo para curar as de nossas almas.',
-  holyWoundsSmallBead:
-    'Meu Jesus, perdão e misericórdia: Pelos méritos de Vossas Santas Chagas.',
-};
+// ========== CATÁLOGO DE TERÇOS ==========
 
 const rosaryCatalog = {
   traditional: {
@@ -759,11 +376,15 @@ const rosaryCatalog = {
       },
       {
         title: '2. Meditação:',
-        text: 'Reflita sobre cada mistério enquanto reza. Use o timer para pausar e meditar.',
+        text: 'Reflita sobre cada mistério enquanto reza. Use o timer para pausar e meditar. Leia atentamente o texto bíblico completo.',
       },
       {
         title: '3. Ritmo:',
-        text: 'Não tenha pressa. Cada Ave-Maria pode durar de 30 a 60 segundos com meditação.',
+        text: 'Não tenha pressa. Cada Ave-Maria pode durar de 30 a 60 segundos com meditação profunda.',
+      },
+      {
+        title: '4. Navegação:',
+        text: 'Use as setas ← → do teclado ou os botões na tela para navegar. Pressione Espaço para controlar o timer.',
       },
     ],
     days: traditionalMysteriesData,
@@ -777,7 +398,7 @@ const rosaryCatalog = {
     helpTips: [
       {
         title: '1. Início:',
-        text: 'Faça o sinal da cruz, reze o Creio e depois siga as invocações iniciais conforme o livreto.',
+        text: 'Faça o sinal da cruz, reze o Creio e depois siga as invocações iniciais conforme indicado.',
       },
       {
         title: '2. Nas contas:',
@@ -785,7 +406,11 @@ const rosaryCatalog = {
       },
       {
         title: '3. Meditação:',
-        text: 'Use as sugestões diárias das imagens para contemplar cada dezena com calma e devoção.',
+        text: 'Use as sugestões diárias para contemplar cada dezena com calma. Leia os textos bíblicos completos com atenção.',
+      },
+      {
+        title: '4. Devoção:',
+        text: 'Este terço é uma meditação nas chagas de Cristo. Peça cura para suas próprias feridas espirituais.',
       },
     ],
     days: holyWoundsMeditationsData,
@@ -802,6 +427,7 @@ class RosaryApp {
     this.timerSeconds = 0;
     this.timerDuration = 45;
     this.prayerStructure = [];
+    this.firstTimeUser = !localStorage.getItem('returnUser');
 
     this.settings = {
       theme: localStorage.getItem('theme') || 'dark',
@@ -822,6 +448,13 @@ class RosaryApp {
     this.setupEventListeners();
     this.updateTimerDisplay();
     this.showRosarySelector();
+
+    // Marcar como usuário que retornou após primeira visita
+    if (this.firstTimeUser) {
+      setTimeout(() => {
+        localStorage.setItem('returnUser', 'true');
+      }, 3000);
+    }
   }
 
   setupEventListeners() {
@@ -871,6 +504,12 @@ class RosaryApp {
       event.preventDefault();
       this.togglePanel('help');
     });
+
+    // Botão flutuante de ajuda
+    const floatingHelpBtn = document.getElementById('floatingHelpBtn');
+    if (floatingHelpBtn) {
+      floatingHelpBtn.addEventListener('click', () => this.togglePanel('help'));
+    }
 
     document
       .getElementById('timerBtn')
@@ -947,6 +586,10 @@ class RosaryApp {
         event.preventDefault();
         this.toggleTimer();
       }
+      if (event.key === '?') {
+        event.preventDefault();
+        this.togglePanel('help');
+      }
     });
   }
 
@@ -1000,6 +643,21 @@ class RosaryApp {
     this.resetTimer();
     this.loadContent();
     this.updateProgress();
+
+    // Mostrar dica para primeira vez
+    if (this.firstTimeUser) {
+      setTimeout(() => this.showQuickTip(), 1000);
+    }
+  }
+
+  showQuickTip() {
+    const helpBtn = document.getElementById('floatingHelpBtn');
+    if (helpBtn) {
+      helpBtn.style.animation = 'pulse-help 1s ease-in-out 3';
+      setTimeout(() => {
+        this.togglePanel('help');
+      }, 3000);
+    }
   }
 
   showRosarySelector() {
@@ -1133,7 +791,7 @@ class RosaryApp {
         content: prayers.hailMary,
         mysteryNumber: index + 1,
         badge: '10 vezes',
-        instruction: 'Reze esta oração 10 vezes meditando no mistério.',
+        instruction: 'Reze esta oração 10 vezes meditando no mistério acima.',
       });
       prayerItems.push({
         type: 'prayer',
@@ -1189,7 +847,7 @@ class RosaryApp {
           },
         ],
         badge: '3 vezes',
-        note: 'Amém somente na última vez, conforme o livreto das imagens.',
+        note: 'Amém somente na última vez.',
       },
     ];
   }
@@ -1201,7 +859,7 @@ class RosaryApp {
       prayerItems.push({
         type: 'mystery-intro',
         mysteryNumber: index + 1,
-        introLabel: 'Sugestão para meditação do terço',
+        introLabel: 'Sugestão para meditação',
       });
       prayerItems.push({
         type: 'prayer',
@@ -1213,7 +871,7 @@ class RosaryApp {
         title: 'Nas contas pequenas',
         content: prayers.holyWoundsSmallBead,
         badge: '10 vezes',
-        instruction: 'Reze esta jaculatória 10 vezes nesta dezena.',
+        instruction: 'Reze esta jaculatória 10 vezes meditando no texto bíblico acima.',
       });
     }
 
@@ -1269,6 +927,8 @@ class RosaryApp {
     document.getElementById('pageTitle').textContent = dayData.title;
 
     const content = document.getElementById('prayerContent');
+    content.classList.add('fade-in');
+
     if (currentPrayer.type === 'mystery-intro') {
       const mystery =
         dayData.mysteries[currentPrayer.mysteryNumber - 1] ||
@@ -1278,6 +938,8 @@ class RosaryApp {
     }
 
     content.innerHTML = this.renderPrayer(currentPrayer);
+
+    setTimeout(() => content.classList.remove('fade-in'), 400);
   }
 
   createFallbackMystery(mysteryNumber) {
@@ -1290,20 +952,16 @@ class RosaryApp {
   }
 
   renderMysteryIntro(mystery, prayer) {
-    const referenceBlock = mystery.reference
-      ? `<div class="mystery-scripture"><p>${mystery.reference}</p></div>`
-      : '';
-
     const scriptureBlock = mystery.scripture
       ? `
           <div class="mystery-scripture">
             <p>"${mystery.scripture}"</p>
-            ${mystery.reference ? `<cite>(${mystery.reference})</cite>` : ''}
+            ${mystery.reference ? `<cite>${mystery.reference}</cite>` : ''}
           </div>
         `
-      : referenceBlock;
+      : '';
 
-    const introLabel = prayer.introLabel || '💭 Reflexão';
+    const introLabel = prayer.introLabel || '💭 Meditação';
 
     return `
       <div class="mystery-header">
@@ -1336,7 +994,7 @@ class RosaryApp {
       ? `<div class="ave-maria-instruction">📿 ${prayer.instruction}</div>`
       : '';
     const note = prayer.note
-      ? `<div class="prayer-note">${prayer.note}</div>`
+      ? `<div class="prayer-note">ℹ️ ${prayer.note}</div>`
       : '';
 
     return `
@@ -1549,11 +1207,6 @@ class RosaryApp {
   }
 
   loadFallbackMusic() {
-    const fallbackSources = [
-      'data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQoGAACBhYqFbF1fdJFRuoqJhH+Ih4lhkYuFh4p9l4mHgol9i4l/kYmBhoeHjIZ/j4qEiYaJkIaIdYSRg46DjIeFhoeOh4yGhYiHh4mGhol5kol+hoeEh4qGhYmGhoiOg4yFgol+h42Jh4yBhYaLhYeBdJKJhYaKg4yGiY2Hi4t/kYmGh4eNjIaGgIuLhYmLh4yDi4eKhYOHe5SJhYaLhYaMfYyMhYqGh42KeYyKhIaNg4yIhY2GjIJ8kYqGh4qBi4eHjYmNhI6Dh4aLg46Ig4aJkYR/jg==',
-      'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA=',
-    ];
-
     const instrumentalSources = [
       'https://cdn.pixabay.com/audio/2022/08/23/audio_7b6e0434ab.mp3',
       'https://cdn.pixabay.com/audio/2021/08/04/audio_5c31a6ca7e.mp3',
@@ -1563,15 +1216,6 @@ class RosaryApp {
     const randomIndex = Math.floor(Math.random() * instrumentalSources.length);
     this.backgroundAudio.src = instrumentalSources[randomIndex];
     this.backgroundAudio.load();
-
-    this.backgroundAudio.addEventListener(
-      'error',
-      () => {
-        this.backgroundAudio.src = fallbackSources[0];
-        this.backgroundAudio.load();
-      },
-      { once: true }
-    );
   }
 
   toggleTimer() {
