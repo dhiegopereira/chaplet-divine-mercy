@@ -1,0 +1,289 @@
+{
+  "segunda": {
+    "title": "Mistérios Gozosos - Segunda-feira",
+    "menuLabel": "Segunda - Mistérios Gozosos",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "A Anunciação",
+        "scripture": "O anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem... O anjo lhe disse: 'Ave, cheia de graça, o Senhor está contigo'.",
+        "reference": "Lc 1, 26-28",
+        "meditation": "Contemplemos a humildade e obediência de Maria ao aceitar ser a Mãe de Deus."
+      },
+      {
+        "number": 2,
+        "title": "A Visitação",
+        "scripture": "Maria partiu para a região montanhosa, dirigindo-se, apressadamente, a uma cidade de Judá. Entrou na casa de Zacarias e saudou Isabel. Quando Isabel ouviu a saudação de Maria, a criança lhe estremeceu no ventre.",
+        "reference": "Lc 1, 39-41",
+        "meditation": "Meditemos sobre a caridade de Maria em visitar e ajudar sua prima Isabel."
+      },
+      {
+        "number": 3,
+        "title": "O Nascimento de Jesus",
+        "scripture": "Enquanto lá estavam, completaram-se os dias dela. E Maria deu à luz seu filho primogênito, envolveu-o em faixas e deitou-o numa manjedoura, porque não havia lugar para eles na hospedaria.",
+        "reference": "Lc 2, 6-7",
+        "meditation": "Contemplemos a simplicidade e pobreza do nascimento do Salvador."
+      },
+      {
+        "number": 4,
+        "title": "A Apresentação no Templo",
+        "scripture": "Levaram-no a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na lei do Senhor: 'Todo primogênito do sexo masculino será consagrado ao Senhor'.",
+        "reference": "Lc 2, 22-23",
+        "meditation": "Meditemos sobre a obediência de Maria e José à lei de Deus."
+      },
+      {
+        "number": 5,
+        "title": "A Perda e o Encontro de Jesus no Templo",
+        "scripture": "Três dias depois, encontraram-no no templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam estupefatos com sua inteligência e suas respostas.",
+        "reference": "Lc 2, 46-47",
+        "meditation": "Contemplemos Jesus dedicado às coisas de seu Pai celestial."
+      }
+    ]
+  },
+  "terca": {
+    "title": "Mistérios Dolorosos - Terça-feira",
+    "menuLabel": "Terça - Mistérios Dolorosos",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "A Agonia de Jesus no Horto das Oliveiras",
+        "scripture": "Então lhes disse: 'Minha alma está numa tristeza de morte. Ficai aqui e vigiai comigo'. Adiantando-se um pouco, prostrou-se com a face por terra e orava: 'Meu Pai, se é possível, afasta de mim este cálice. Todavia, faça-se não como eu quero, mas como tu queres'.",
+        "reference": "Mt 26, 38-39",
+        "meditation": "Contemplemos a agonia de Jesus e sua total submissão à vontade do Pai."
+      },
+      {
+        "number": 2,
+        "title": "A Flagelação de Jesus",
+        "scripture": "Pilatos então tomou Jesus e mandou flagelá-lo.",
+        "reference": "Jo 19, 1",
+        "meditation": "Meditemos sobre os sofrimentos físicos que Jesus suportou por nossos pecados."
+      },
+      {
+        "number": 3,
+        "title": "A Coroação de Espinhos",
+        "scripture": "Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: 'Salve, rei dos judeus!'.",
+        "reference": "Jo 19, 2-3",
+        "meditation": "Contemplemos a paciência de Jesus diante das humilhações e zombarias."
+      },
+      {
+        "number": 4,
+        "title": "Jesus Carrega a Cruz",
+        "scripture": "Então Pilatos o entregou para ser crucificado. Tomaram, pois, a Jesus, que, carregando a sua cruz, saiu para o lugar chamado Calvário.",
+        "reference": "Jo 19, 16-17",
+        "meditation": "Meditemos sobre a força de Jesus para carregar nossa cruz de pecados."
+      },
+      {
+        "number": 5,
+        "title": "A Crucificação e Morte de Jesus",
+        "scripture": "Chegados ao lugar chamado Calvário, ali o crucificaram. [...] Jesus exclamou com voz forte: 'Pai, em tuas mãos entrego o meu espírito'. E, dizendo isso, expirou.",
+        "reference": "Lc 23, 33.46",
+        "meditation": "Contemplemos o supremo sacrifício de Jesus por nossa salvação."
+      }
+    ]
+  },
+  "quarta": {
+    "title": "Mistérios Gloriosos - Quarta-feira",
+    "menuLabel": "Quarta - Mistérios Gloriosos",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "A Ressurreição de Jesus",
+        "scripture": "O anjo disse às mulheres: 'Não tenhais medo! Sei que procurais Jesus, que foi crucificado. Ele não está aqui, pois ressuscitou, como havia dito. Vinde ver o lugar onde ele estava'.",
+        "reference": "Mt 28, 5-6",
+        "meditation": "Contemplemos a vitória de Jesus sobre a morte e nossa esperança de vida eterna."
+      },
+      {
+        "number": 2,
+        "title": "A Ascensão de Jesus ao Céu",
+        "scripture": "Enquanto os abençoava, afastou-se deles e foi elevado ao céu.",
+        "reference": "Lc 24, 51",
+        "meditation": "Meditemos sobre Jesus preparando-nos um lugar no céu."
+      },
+      {
+        "number": 3,
+        "title": "A Vinda do Espírito Santo",
+        "scripture": "De repente, veio do céu um ruído, como de um vento impetuoso, e encheu toda a casa onde se encontravam. Então apareceram línguas como de fogo, que se repartiram e pousaram sobre cada um deles. Todos ficaram cheios do Espírito Santo.",
+        "reference": "At 2, 2-4",
+        "meditation": "Contemplemos os dons do Espírito Santo em nossa vida."
+      },
+      {
+        "number": 4,
+        "title": "A Assunção de Nossa Senhora",
+        "scripture": "Uma grande sinal apareceu no céu: uma mulher vestida de sol, tendo a lua debaixo dos pés e sobre a cabeça uma coroa de doze estrelas.",
+        "reference": "Ap 12, 1",
+        "meditation": "Meditemos sobre a glorificação de Maria em corpo e alma no céu."
+      },
+      {
+        "number": 5,
+        "title": "A Coroação de Nossa Senhora como Rainha do Céu e da Terra",
+        "scripture": "Apareceu, então, um grande sinal no céu: uma mulher... sobre a cabeça uma coroa de doze estrelas.",
+        "reference": "Ap 12, 1",
+        "meditation": "Contemplemos Maria coroada Rainha do Céu e nossa intercessora."
+      }
+    ]
+  },
+  "quinta": {
+    "title": "Mistérios Luminosos - Quinta-feira",
+    "menuLabel": "Quinta - Mistérios Luminosos",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "O Batismo de Jesus no Rio Jordão",
+        "scripture": "Depois que Jesus foi batizado, saiu logo da água. Eis que os céus se abriram e ele viu o Espírito de Deus descendo como pomba e vindo sobre ele. E do céu veio uma voz: 'Este é o meu Filho amado, em quem me comprazo'.",
+        "reference": "Mt 3, 16-17",
+        "meditation": "Contemplemos nosso batismo e nossa filiação divina."
+      },
+      {
+        "number": 2,
+        "title": "As Bodas de Caná",
+        "scripture": "A mãe de Jesus disse aos serventes: 'Fazei tudo o que ele vos disser'. Jesus disse: 'Enchei as talhas de água'. Eles as encheram até a borda. Disse-lhes: 'Tirai agora e levai ao mestre-sala'. E a água transformou-se em vinho.",
+        "reference": "Jo 2, 5-7.9",
+        "meditation": "Meditemos sobre a intercessão de Maria e os milagres de Jesus."
+      },
+      {
+        "number": 3,
+        "title": "O Anúncio do Reino de Deus com o Convite à Conversão",
+        "scripture": "O tempo já se completou e o Reino de Deus está próximo. Convertei-vos e crede no Evangelho.",
+        "reference": "Mc 1, 15",
+        "meditation": "Contemplemos o chamado à conversão e ao Reino de Deus."
+      },
+      {
+        "number": 4,
+        "title": "A Transfiguração de Jesus",
+        "scripture": "Jesus tomou consigo Pedro, Tiago e João, e os levou a um lugar à parte, sobre um alto monte. E transfigurou-se diante deles; seu rosto brilhou como o sol e suas roupas ficaram brancas como a luz.",
+        "reference": "Mt 17, 1-2",
+        "meditation": "Meditemos sobre a glória divina de Jesus revelada aos apóstolos."
+      },
+      {
+        "number": 5,
+        "title": "A Instituição da Eucaristia",
+        "scripture": "Enquanto comiam, Jesus tomou o pão, pronunciou a bênção, partiu-o e deu aos discípulos, dizendo: 'Tomai e comei, isto é o meu corpo'. Tomou depois um cálice, deu graças e deu-lho, dizendo: 'Bebei dele todos; pois isto é o meu sangue, o sangue da aliança, derramado em favor de muitos para remissão dos pecados'.",
+        "reference": "Mt 26, 26-28",
+        "meditation": "Contemplemos o dom da Eucaristia e a presença real de Jesus."
+      }
+    ]
+  },
+  "sexta": {
+    "title": "Mistérios Dolorosos - Sexta-feira",
+    "menuLabel": "Sexta - Mistérios Dolorosos",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "A Agonia de Jesus no Horto das Oliveiras",
+        "scripture": "Então lhes disse: 'Minha alma está numa tristeza de morte. Ficai aqui e vigiai comigo'. Adiantando-se um pouco, prostrou-se com a face por terra e orava: 'Meu Pai, se é possível, afasta de mim este cálice. Todavia, faça-se não como eu quero, mas como tu queres'.",
+        "reference": "Mt 26, 38-39",
+        "meditation": "Contemplemos a agonia de Jesus e sua total submissão à vontade do Pai."
+      },
+      {
+        "number": 2,
+        "title": "A Flagelação de Jesus",
+        "scripture": "Pilatos então tomou Jesus e mandou flagelá-lo.",
+        "reference": "Jo 19, 1",
+        "meditation": "Meditemos sobre os sofrimentos físicos que Jesus suportou por nossos pecados."
+      },
+      {
+        "number": 3,
+        "title": "A Coroação de Espinhos",
+        "scripture": "Os soldados, tecendo uma coroa de espinhos, puseram-lha na cabeça e vestiram-no com um manto de púrpura. Aproximavam-se dele e diziam: 'Salve, rei dos judeus!'.",
+        "reference": "Jo 19, 2-3",
+        "meditation": "Contemplemos a paciência de Jesus diante das humilhações e zombarias."
+      },
+      {
+        "number": 4,
+        "title": "Jesus Carrega a Cruz",
+        "scripture": "Então Pilatos o entregou para ser crucificado. Tomaram, pois, a Jesus, que, carregando a sua cruz, saiu para o lugar chamado Calvário.",
+        "reference": "Jo 19, 16-17",
+        "meditation": "Meditemos sobre a força de Jesus para carregar nossa cruz de pecados."
+      },
+      {
+        "number": 5,
+        "title": "A Crucificação e Morte de Jesus",
+        "scripture": "Chegados ao lugar chamado Calvário, ali o crucificaram. [...] Jesus exclamou com voz forte: 'Pai, em tuas mãos entrego o meu espírito'. E, dizendo isso, expirou.",
+        "reference": "Lc 23, 33.46",
+        "meditation": "Contemplemos o supremo sacrifício de Jesus por nossa salvação."
+      }
+    ]
+  },
+  "sabado": {
+    "title": "Mistérios Gozosos - Sábado",
+    "menuLabel": "Sábado - Mistérios Gozosos",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "A Anunciação",
+        "scripture": "O anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem... O anjo lhe disse: 'Ave, cheia de graça, o Senhor está contigo'.",
+        "reference": "Lc 1, 26-28",
+        "meditation": "Contemplemos a humildade e obediência de Maria ao aceitar ser a Mãe de Deus."
+      },
+      {
+        "number": 2,
+        "title": "A Visitação",
+        "scripture": "Maria partiu para a região montanhosa, dirigindo-se, apressadamente, a uma cidade de Judá. Entrou na casa de Zacarias e saudou Isabel. Quando Isabel ouviu a saudação de Maria, a criança lhe estremeceu no ventre.",
+        "reference": "Lc 1, 39-41",
+        "meditation": "Meditemos sobre a caridade de Maria em visitar e ajudar sua prima Isabel."
+      },
+      {
+        "number": 3,
+        "title": "O Nascimento de Jesus",
+        "scripture": "Enquanto lá estavam, completaram-se os dias dela. E Maria deu à luz seu filho primogênito, envolveu-o em faixas e deitou-o numa manjedoura, porque não havia lugar para eles na hospedaria.",
+        "reference": "Lc 2, 6-7",
+        "meditation": "Contemplemos a simplicidade e pobreza do nascimento do Salvador."
+      },
+      {
+        "number": 4,
+        "title": "A Apresentação no Templo",
+        "scripture": "Levaram-no a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na lei do Senhor: 'Todo primogênito do sexo masculino será consagrado ao Senhor'.",
+        "reference": "Lc 2, 22-23",
+        "meditation": "Meditemos sobre a obediência de Maria e José à lei de Deus."
+      },
+      {
+        "number": 5,
+        "title": "A Perda e o Encontro de Jesus no Templo",
+        "scripture": "Três dias depois, encontraram-no no templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. Todos os que o ouviam estavam estupefatos com sua inteligência e suas respostas.",
+        "reference": "Lc 2, 46-47",
+        "meditation": "Contemplemos Jesus dedicado às coisas de seu Pai celestial."
+      }
+    ]
+  },
+  "domingo": {
+    "title": "Mistérios Gloriosos - Domingo",
+    "menuLabel": "Domingo - Mistérios Gloriosos",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "A Ressurreição de Jesus",
+        "scripture": "O anjo disse às mulheres: 'Não tenhais medo! Sei que procurais Jesus, que foi crucificado. Ele não está aqui, pois ressuscitou, como havia dito. Vinde ver o lugar onde ele estava'.",
+        "reference": "Mt 28, 5-6",
+        "meditation": "Contemplemos a vitória de Jesus sobre a morte e nossa esperança de vida eterna."
+      },
+      {
+        "number": 2,
+        "title": "A Ascensão de Jesus ao Céu",
+        "scripture": "Enquanto os abençoava, afastou-se deles e foi elevado ao céu.",
+        "reference": "Lc 24, 51",
+        "meditation": "Meditemos sobre Jesus preparando-nos um lugar no céu."
+      },
+      {
+        "number": 3,
+        "title": "A Vinda do Espírito Santo",
+        "scripture": "De repente, veio do céu um ruído, como de um vento impetuoso, e encheu toda a casa onde se encontravam. Então apareceram línguas como de fogo, que se repartiram e pousaram sobre cada um deles. Todos ficaram cheios do Espírito Santo.",
+        "reference": "At 2, 2-4",
+        "meditation": "Contemplemos os dons do Espírito Santo em nossa vida."
+      },
+      {
+        "number": 4,
+        "title": "A Assunção de Nossa Senhora",
+        "scripture": "Uma grande sinal apareceu no céu: uma mulher vestida de sol, tendo a lua debaixo dos pés e sobre a cabeça uma coroa de doze estrelas.",
+        "reference": "Ap 12, 1",
+        "meditation": "Meditemos sobre a glorificação de Maria em corpo e alma no céu."
+      },
+      {
+        "number": 5,
+        "title": "A Coroação de Nossa Senhora como Rainha do Céu e da Terra",
+        "scripture": "Apareceu, então, um grande sinal no céu: uma mulher... sobre a cabeça uma coroa de doze estrelas.",
+        "reference": "Ap 12, 1",
+        "meditation": "Contemplemos Maria coroada Rainha do Céu e nossa intercessora."
+      }
+    ]
+  }
+}

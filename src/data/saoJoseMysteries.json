@@ -1,0 +1,43 @@
+{
+  "segunda": {
+    "title": "Terço de São José — Mistérios da Sagrada Família",
+    "menuLabel": "Terço de São José",
+    "mysteries": [
+      {
+        "number": 1,
+        "title": "A Anunciação a Maria e a Proteção de José",
+        "scripture": "O anjo Gabriel foi enviado por Deus a uma cidade da Galileia, chamada Nazaré, a uma virgem desposada com um homem chamado José, da casa de Davi. E disse à Virgem: 'Ave, cheia de graça, o Senhor está contigo'. José, homem justo, acolheu com fé o mistério que se realizava e recebeu a missão de guardar a Sagrada Família.",
+        "reference": "Lucas 1, 26-38; Mateus 1, 19-24",
+        "meditation": "Contemplemos São José acolhendo em silêncio e obediência a vontade de Deus. Peçamos a graça de confiar nos planos do Senhor mesmo quando não os compreendemos."
+      },
+      {
+        "number": 2,
+        "title": "O Nascimento de Jesus e a Paternidade de José",
+        "scripture": "Enquanto estavam em Belém, completaram-se os dias de Maria dar à luz, e ela deu à luz o seu filho primogênito. José, como pai adotivo, cuidou do Menino e de sua Mãe com zelo e ternura, protegendo-os na pobreza da manjedoura.",
+        "reference": "Lucas 2, 6-7; Mateus 2, 13-15",
+        "meditation": "Meditemos sobre o coração paterno de José, que protegeu Jesus com desvelo. Peçamos por todos os pais e por casais que se preparam para formar uma família cristã."
+      },
+      {
+        "number": 3,
+        "title": "A Apresentação de Jesus no Templo",
+        "scripture": "Quando se completaram os dias da purificação, levaram o Menino a Jerusalém para apresentá-lo ao Senhor, conforme está escrito na Lei do Senhor. José cumpriu fielmente os preceitos, guiando a Família no caminho da fé.",
+        "reference": "Lucas 2, 22-24",
+        "meditation": "Contemplemos José conduzindo Jesus ao Templo. Peçamos a graça de conduzir nossa vida e nossos relacionamentos sempre à presença de Deus."
+      },
+      {
+        "number": 4,
+        "title": "A Perda e o Encontro de Jesus no Templo",
+        "scripture": "Três dias depois, encontraram Jesus no Templo, sentado no meio dos doutores, ouvindo-os e interrogando-os. José e Maria, aflitos, buscaram o Menino e, ao encontrá-lo, agradeceram a Deus.",
+        "reference": "Lucas 2, 46-49",
+        "meditation": "Meditemos sobre a perseverança de José na busca por Jesus. Peçamos que, nas dificuldades do caminho, jamais desistamos de buscar o Senhor."
+      },
+      {
+        "number": 5,
+        "title": "São José, Modelo de Entrega e Padroeiro da Boa Morte",
+        "scripture": "José, servo fiel e prudente, viveu inteiramente a serviço de Jesus e Maria. A tradição da Igreja o venera como padroeiro da boa morte, por ter partido amparado por Jesus e Maria.",
+        "reference": "Mateus 1, 24; tradição da Igreja",
+        "meditation": "Contemplemos São José, exemplo de entrega silenciosa e amor fiel. Peçamos sua intercessão para viver e amar com pureza, serviço e fidelidade."
+      }
+    ]
+  }
+}

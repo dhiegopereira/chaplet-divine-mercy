@@ -79,19 +79,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body.selection-mode {
-  min-height: 100vh;
-}
-
-body.selection-mode .sidebar,
-body.selection-mode .overlay,
-body.selection-mode .main-content {
-  display: none;
-}
-
-body:not(.selection-mode) .selector-screen {
-  display: none;
-}
+/*
+ * Observação: no app original (vanilla JS) a exibição entre a tela de
+ * seleção e a tela de oração era controlada via a classe `selection-mode`
+ * no <body>. Na versão React essa alternância é feita diretamente pelo
+ * componente `App` (renderiza `RosarySelector` ou `PrayerScreen`), então
+ * as regras baseadas em `body.selection-mode` foram removidas — elas
+ * ocultavam permanentemente `.selector-screen` por padrão.
+ */
 
 .selector-screen {
   min-height: 100vh;
