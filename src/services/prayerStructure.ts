@@ -109,12 +109,53 @@ function generateHolyWounds(day: DayData, p: Prayers): PrayerStep[] {
   ];
 }
 
+function saoJoseMysterySteps(day: DayData, p: Prayers): PrayerStep[] {
+  const steps: PrayerStep[] = [];
+  day.mysteries.forEach((mystery) => {
+    steps.push({ type: 'mystery-intro', mysteryNumber: mystery.number });
+    steps.push({ type: 'prayer', title: 'Pai Nosso', content: p.ourFather });
+    steps.push({
+      type: 'prayer',
+      title: '10 Ave Marias',
+      content: p.hailMary,
+      mysteryNumber: mystery.number,
+      badge: '10 vezes',
+      instruction: 'Reze esta oração 10 vezes meditando no mistério.',
+    });
+    steps.push({ type: 'prayer', title: 'Glória', content: p.glory });
+    if (mystery.jaculatoria) {
+      steps.push({
+        type: 'prayer',
+        title: 'Jaculatória',
+        content: mystery.jaculatoria,
+      });
+    }
+  });
+  return steps;
+}
+
 /**
- * Terço de São José: reutiliza a estrutura mariana (mesmo ritmo de dezenas),
- * pois segue o formato do terço comum com Pai-Nosso, 10 Ave-Marias, Glória.
+ * Terço de São José: mesmo ritmo de dezenas do terço comum (Pai-Nosso,
+ * 10 Ave-Marias, Glória), mas com oferecimento, jaculatórias e fechamento
+ * próprios, dirigidos a São José em vez de à Virgem Maria.
  */
 function generateSaoJose(day: DayData, p: Prayers): PrayerStep[] {
-  return generateTraditional(day, p);
+  return [
+    { type: 'opening', title: 'Sinal da Cruz', content: p.signalOfCross },
+    { type: 'opening', title: 'Oferecimento', content: p.saoJoseOffering },
+    { type: 'opening', title: 'Creio', content: p.creed },
+    { type: 'opening', title: 'Pai Nosso', content: p.ourFather },
+    ...OPENING_VIRTUES.map<PrayerStep>((virtue, i) => ({
+      type: 'opening',
+      title: `${i + 1}ª Ave Maria`,
+      content: p.hailMary,
+      virtue,
+    })),
+    { type: 'opening', title: 'Glória', content: p.glory },
+    ...saoJoseMysterySteps(day, p),
+    { type: 'closing', title: 'Infinitas Graças', content: p.saoJoseInfiniteGraces },
+    { type: 'closing', title: 'Salve Rainha', content: p.hailHolyQueen },
+  ];
 }
 
 const GENERATORS: Record<

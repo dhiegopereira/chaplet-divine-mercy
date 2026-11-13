@@ -28,42 +28,41 @@ export default function PrayerStepCard({
     );
     if (!mystery) return null;
     return (
-      <article className="prayer-card mystery-card">
-        <span className="mystery-label">
+      <article className="mystery-header">
+        <div className="mystery-number">
           {step.introLabel ?? `${mystery.number}º Mistério`}
-        </span>
+        </div>
         <h2 className="mystery-title">{mystery.title}</h2>
         <blockquote className="mystery-scripture">
           {mystery.scripture}
-          <cite className="mystery-reference">{mystery.reference}</cite>
+          <cite>{mystery.reference}</cite>
         </blockquote>
         <div className="mystery-meditation">
-          <strong>Meditação:</strong> {mystery.meditation}
+          <h4>Meditação</h4>
+          <p>{mystery.meditation}</p>
         </div>
       </article>
     );
   }
 
   return (
-    <article className={`prayer-card ${step.type}-card`}>
-      <header className="prayer-card-head">
-        <h2 className="prayer-card-title">{step.title}</h2>
-        {step.badge && <span className="prayer-badge">{step.badge}</span>}
-      </header>
+    <article className="prayer-item current">
+      <h2 className="prayer-title">{step.title}</h2>
+      {step.badge && <span className="prayer-badge">{step.badge}</span>}
 
-      {step.virtue && <p className="prayer-virtue">{step.virtue}</p>}
+      {step.virtue && <p className="prayer-note">{step.virtue}</p>}
 
       {renderContent(step.content)}
 
       {step.sections?.map((section, i) => (
         <div className="prayer-section" key={i}>
-          <span className="prayer-section-label">{section.label}</span>
+          <span className="prayer-section-title">{section.label}</span>
           {renderContent(section.content)}
         </div>
       ))}
 
       {step.instruction && (
-        <p className="prayer-instruction">{step.instruction}</p>
+        <p className="ave-maria-instruction">{step.instruction}</p>
       )}
       {step.note && <p className="prayer-note">{step.note}</p>}
     </article>

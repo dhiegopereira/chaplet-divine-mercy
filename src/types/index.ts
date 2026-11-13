@@ -24,6 +24,8 @@ export interface Mystery {
   scripture: string;
   reference: string;
   meditation: string;
+  /** Jaculatória própria rezada ao final da dezena (Terço de São José). */
+  jaculatoria?: string;
 }
 
 /** Conteúdo de um dia: título, rótulo do menu e os 5 mistérios. */
@@ -71,7 +73,9 @@ export type PrayerKey =
   | 'holyWoundsBlood'
   | 'holyWoundsSupplication'
   | 'holyWoundsLargeBead'
-  | 'holyWoundsSmallBead';
+  | 'holyWoundsSmallBead'
+  | 'saoJoseOffering'
+  | 'saoJoseInfiniteGraces';
 
 export type Prayers = Record<PrayerKey, string>;
 
@@ -117,4 +121,25 @@ export interface Settings {
   soundEnabled: boolean;
   autoAdvance: boolean;
   backgroundMusic: boolean;
+}
+
+/** Uma passagem bíblica da liturgia do dia (leitura, salmo ou evangelho). */
+export interface LiturgyPassage {
+  referencia: string;
+  titulo?: string;
+  refrao?: string;
+  texto: string;
+}
+
+/** Resposta da API pública de liturgia diária (liturgia.up.railway.app). */
+export interface DailyLiturgy {
+  data: string;
+  liturgia: string;
+  cor: string;
+  leituras: {
+    primeiraLeitura: LiturgyPassage[];
+    salmo: LiturgyPassage[];
+    segundaLeitura: LiturgyPassage[];
+    evangelho: LiturgyPassage[];
+  };
 }

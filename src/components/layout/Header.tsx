@@ -5,6 +5,7 @@ interface HeaderProps {
   onToggleHelp: () => void;
   onToggleTimer: () => void;
   onToggleMusic: () => void;
+  onOpenLiturgy: () => void;
 }
 
 /** Cabeçalho da tela de oração. */
@@ -15,6 +16,7 @@ export default function Header({
   onToggleHelp,
   onToggleTimer,
   onToggleMusic,
+  onOpenLiturgy,
 }: HeaderProps) {
   return (
     <header className="header">
@@ -41,6 +43,14 @@ export default function Header({
       </div>
       <h1 className="header-title">{title}</h1>
       <div className="header-actions">
+        <button
+          type="button"
+          className="action-btn"
+          onClick={onOpenLiturgy}
+          title="Liturgia do dia"
+        >
+          📖
+        </button>
         <button
           type="button"
           className="action-btn"

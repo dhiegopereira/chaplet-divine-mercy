@@ -3,10 +3,14 @@ import { rosaryCatalog, rosaryOrder } from '@/services/rosaryCatalog';
 
 interface RosarySelectorProps {
   onSelect: (key: RosaryKey) => void;
+  onOpenLiturgy: () => void;
 }
 
 /** Tela inicial: escolha do terço a rezar. */
-export default function RosarySelector({ onSelect }: RosarySelectorProps) {
+export default function RosarySelector({
+  onSelect,
+  onOpenLiturgy,
+}: RosarySelectorProps) {
   return (
     <section className="selector-screen">
       <div className="selector-content">
@@ -17,6 +21,9 @@ export default function RosarySelector({ onSelect }: RosarySelectorProps) {
             Terços com navegação simples, meditações e passagens bíblicas.
             Escolha abaixo e comece a rezar.
           </p>
+          <button type="button" className="selector-action" onClick={onOpenLiturgy}>
+            📖 Ler a liturgia de hoje
+          </button>
         </div>
 
         <div className="selector-grid">

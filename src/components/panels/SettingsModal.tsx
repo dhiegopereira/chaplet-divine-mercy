@@ -12,7 +12,7 @@ export default function SettingsModal({ open, onClose }: SettingsModalProps) {
   if (!open) return null;
 
   return (
-    <div className="modal visible" onClick={onClose}>
+    <div className="modal active" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h3>⚙️ Configurações</h3>

@@ -9,6 +9,7 @@ interface SidebarProps {
   onOpenSettings: () => void;
   onToggleHelp: () => void;
   onToggleTimer: () => void;
+  onOpenLiturgy: () => void;
 }
 
 /** Menu lateral com os dias/mistérios do terço e funcionalidades. */
@@ -21,17 +22,18 @@ export default function Sidebar({
   onOpenSettings,
   onToggleHelp,
   onToggleTimer,
+  onOpenLiturgy,
 }: SidebarProps) {
   const days = Object.entries(rosary.days) as [Weekday, { menuLabel: string }][];
 
   return (
     <>
       <div
-        className={`overlay${open ? ' visible' : ''}`}
+        className={`overlay${open ? ' active' : ''}`}
         onClick={onClose}
         aria-hidden
       />
-      <nav className={`sidebar${open ? ' open' : ''}`} aria-label="Menu">
+      <nav className={`sidebar${open ? ' active' : ''}`} aria-label="Menu">
         <div className="sidebar-header">
           <h2>
             {rosary.icon} {rosary.sidebarTitle}
@@ -70,6 +72,11 @@ export default function Sidebar({
           <div className="menu-section">
             <h3>Funcionalidades</h3>
             <ul className="menu-list">
+              <li>
+                <button type="button" className="menu-item" onClick={onOpenLiturgy}>
+                  📖 Liturgia do Dia
+                </button>
+              </li>
               <li>
                 <button type="button" className="menu-item" onClick={onToggleTimer}>
                   ⏱️ Timer de Meditação

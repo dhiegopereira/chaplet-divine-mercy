@@ -180,10 +180,23 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0.7rem 1rem;
+  border: none;
   border-radius: 999px;
   background: var(--accent-color);
   color: var(--background-color);
   font-weight: 700;
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.selector-hero .selector-action {
+  margin-top: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.selector-hero .selector-action:hover {
+  transform: translateY(-2px);
 }
 
 /* Layout Principal */

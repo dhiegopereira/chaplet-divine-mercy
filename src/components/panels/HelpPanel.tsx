@@ -14,9 +14,10 @@ export default function HelpPanel({ open, rosary }: HelpPanelProps) {
         <h3>{rosary.helpTitle}</h3>
         <div className="help-tips">
           {rosary.helpTips.map((tip, i) => (
-            <p key={i}>
-              <strong>{tip.title}</strong> {tip.text}
-            </p>
+            <div className="tip" key={i}>
+              <strong>{tip.title}</strong>
+              <p>{tip.text}</p>
+            </div>
           ))}
         </div>
       </div>

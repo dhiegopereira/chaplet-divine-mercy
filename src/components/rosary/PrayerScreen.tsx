@@ -16,10 +16,15 @@ import ProgressBar from '@/components/rosary/ProgressBar';
 interface PrayerScreenProps {
   rosaryKey: RosaryKey;
   onExit: () => void;
+  onOpenLiturgy: () => void;
 }
 
 /** Tela de oração: orquestra estado do terço, timer, painéis e navegação. */
-export default function PrayerScreen({ rosaryKey, onExit }: PrayerScreenProps) {
+export default function PrayerScreen({
+  rosaryKey,
+  onExit,
+  onOpenLiturgy,
+}: PrayerScreenProps) {
   const { settings } = useSettings();
   const session = useRosary(rosaryKey);
   const rosary = getRosary(session.rosaryKey);
@@ -52,7 +57,7 @@ export default function PrayerScreen({ rosaryKey, onExit }: PrayerScreenProps) {
   const title = dayData?.title ?? rosary.title;
 
   return (
-    <div className="app-shell">
+    <div className="app-container">
       <Sidebar
         open={menuOpen}
         rosary={rosary}
@@ -65,6 +70,7 @@ export default function PrayerScreen({ rosaryKey, onExit }: PrayerScreenProps) {
         }}
         onToggleHelp={() => setHelpOpen((v) => !v)}
         onToggleTimer={() => setTimerOpen((v) => !v)}
+        onOpenLiturgy={onOpenLiturgy}
       />
 
       <main className="main-content">
@@ -75,6 +81,7 @@ export default function PrayerScreen({ rosaryKey, onExit }: PrayerScreenProps) {
           onToggleHelp={() => setHelpOpen((v) => !v)}
           onToggleTimer={() => setTimerOpen((v) => !v)}
           onToggleMusic={() => setTimerOpen((v) => v)}
+          onOpenLiturgy={onOpenLiturgy}
         />
 
         <HelpPanel open={helpOpen} rosary={rosary} />
