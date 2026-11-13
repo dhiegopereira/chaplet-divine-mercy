@@ -15,7 +15,7 @@ export type Weekday =
   | 'domingo';
 
 /** Identificador de um terço no catálogo. */
-export type RosaryKey = 'traditional' | 'holyWounds' | 'saoJose';
+export type RosaryKey = 'traditional' | 'holyWounds';
 
 /** Um mistério individual (meditação + passagem bíblica). */
 export interface Mystery {
@@ -24,8 +24,6 @@ export interface Mystery {
   scripture: string;
   reference: string;
   meditation: string;
-  /** Jaculatória própria rezada ao final da dezena (Terço de São José). */
-  jaculatoria?: string;
 }
 
 /** Conteúdo de um dia: título, rótulo do menu e os 5 mistérios. */
@@ -38,12 +36,6 @@ export interface DayData {
 /** Mapa de dias -> conteúdo. Nem todo terço usa os 7 dias. */
 export type DaysData = Partial<Record<Weekday, DayData>>;
 
-/** Dica exibida no painel de ajuda. */
-export interface HelpTip {
-  title: string;
-  text: string;
-}
-
 /** Definição de um terço no catálogo (metadados + dados por dia). */
 export interface RosaryDefinition {
   key: RosaryKey;
@@ -52,8 +44,6 @@ export interface RosaryDefinition {
   sidebarTitle: string;
   description: string;
   daySectionTitle: string;
-  helpTitle: string;
-  helpTips: HelpTip[];
   days: DaysData;
 }
 
@@ -73,9 +63,7 @@ export type PrayerKey =
   | 'holyWoundsBlood'
   | 'holyWoundsSupplication'
   | 'holyWoundsLargeBead'
-  | 'holyWoundsSmallBead'
-  | 'saoJoseOffering'
-  | 'saoJoseInfiniteGraces';
+  | 'holyWoundsSmallBead';
 
 export type Prayers = Record<PrayerKey, string>;
 
@@ -110,36 +98,4 @@ export interface PrayerStep {
   introLabel?: string;
   /** Seções agrupadas (fechamento das Santas Chagas). */
   sections?: PrayerSection[];
-}
-
-/** Configurações do usuário, persistidas em localStorage. */
-export type ThemeName = 'light' | 'dark' | 'sepia';
-
-export interface Settings {
-  theme: ThemeName;
-  fontSize: number;
-  soundEnabled: boolean;
-  autoAdvance: boolean;
-  backgroundMusic: boolean;
-}
-
-/** Uma passagem bíblica da liturgia do dia (leitura, salmo ou evangelho). */
-export interface LiturgyPassage {
-  referencia: string;
-  titulo?: string;
-  refrao?: string;
-  texto: string;
-}
-
-/** Resposta da API pública de liturgia diária (liturgia.up.railway.app). */
-export interface DailyLiturgy {
-  data: string;
-  liturgia: string;
-  cor: string;
-  leituras: {
-    primeiraLeitura: LiturgyPassage[];
-    salmo: LiturgyPassage[];
-    segundaLeitura: LiturgyPassage[];
-    evangelho: LiturgyPassage[];
-  };
 }

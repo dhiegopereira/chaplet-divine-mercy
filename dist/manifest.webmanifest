@@ -1,12 +1,12 @@
 {
   "name": "Terço Digital — Meditação Diária",
   "short_name": "Terço Digital",
-  "description": "Reze o Terço Mariano, Santas Chagas e Terço de São José com meditações guiadas.",
+  "description": "Reze o Terço Mariano e o Terço das Santas Chagas com meditações guiadas.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "theme_color": "#4c1d95",
-  "background_color": "#0a0e13",
+  "theme_color": "#230f15",
+  "background_color": "#120a0d",
   "lang": "pt-BR",
   "categories": ["lifestyle", "education"],
   "icons": [
@@ -32,10 +32,10 @@
       "icons": [{ "src": "/icons/icon-192.svg", "sizes": "192x192" }]
     },
     {
-      "name": "Terço de São José",
-      "short_name": "São José",
-      "description": "Iniciar Terço de São José",
-      "url": "/?terco=saoJose",
+      "name": "Terço das Santas Chagas",
+      "short_name": "Santas Chagas",
+      "description": "Iniciar Terço das Santas Chagas",
+      "url": "/?terco=holyWounds",
       "icons": [{ "src": "/icons/icon-192.svg", "sizes": "192x192" }]
     }
   ]

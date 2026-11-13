@@ -6,23 +6,15 @@ interface SidebarProps {
   activeDay: Weekday;
   onSelectDay: (day: Weekday) => void;
   onClose: () => void;
-  onOpenSettings: () => void;
-  onToggleHelp: () => void;
-  onToggleTimer: () => void;
-  onOpenLiturgy: () => void;
 }
 
-/** Menu lateral com os dias/mistérios do terço e funcionalidades. */
+/** Menu lateral com os dias/mistérios do terço. */
 export default function Sidebar({
   open,
   rosary,
   activeDay,
   onSelectDay,
   onClose,
-  onOpenSettings,
-  onToggleHelp,
-  onToggleTimer,
-  onOpenLiturgy,
 }: SidebarProps) {
   const days = Object.entries(rosary.days) as [Weekday, { menuLabel: string }][];
 
@@ -66,44 +58,6 @@ export default function Sidebar({
                   </button>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          <div className="menu-section">
-            <h3>Funcionalidades</h3>
-            <ul className="menu-list">
-              <li>
-                <button type="button" className="menu-item" onClick={onOpenLiturgy}>
-                  📖 Liturgia do Dia
-                </button>
-              </li>
-              <li>
-                <button type="button" className="menu-item" onClick={onToggleTimer}>
-                  ⏱️ Timer de Meditação
-                </button>
-              </li>
-              <li>
-                <button type="button" className="menu-item" onClick={onToggleHelp}>
-                  ❓ Guia de Oração
-                </button>
-              </li>
-              <li>
-                <button type="button" className="menu-item" onClick={onOpenSettings}>
-                  ⚙️ Configurações
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div className="menu-section menu-tips">
-            <h4>💡 Dicas Rápidas</h4>
-            <ul className="quick-tips">
-              <li>
-                <kbd>←</kbd> <kbd>→</kbd> Navegar
-              </li>
-              <li>
-                <kbd>Espaço</kbd> Timer
-              </li>
             </ul>
           </div>
         </div>
