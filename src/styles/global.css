@@ -130,6 +130,119 @@ body {
   font-size: 1.05rem;
 }
 
+.liturgy-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-soft);
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.liturgy-link-btn:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* ===== Modal de Liturgia do Dia ===== */
+.liturgy-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(8, 4, 5, 0.75);
+  backdrop-filter: blur(4px);
+}
+
+.liturgy-modal-content {
+  width: 100%;
+  max-width: 640px;
+  max-height: min(80vh, 720px);
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-color);
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  box-shadow: var(--shadow-heavy);
+  overflow: hidden;
+}
+
+.liturgy-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--primary-color);
+}
+
+.liturgy-modal-header h3 {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+}
+
+.liturgy-modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.liturgy-section {
+  margin-bottom: 1.5rem;
+}
+
+.liturgy-section-title {
+  display: block;
+  color: var(--accent-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  margin-bottom: 0.6rem;
+}
+
+.liturgy-passages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.liturgy-passage {
+  background: var(--prayer-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.liturgy-passage strong {
+  color: var(--accent-soft);
+}
+
+.liturgy-reference {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.liturgy-note {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.liturgy-retry-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: var(--accent-color);
+  color: var(--background-color);
+  font-weight: 700;
+}
+
 .selector-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

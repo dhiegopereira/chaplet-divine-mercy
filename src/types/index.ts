@@ -99,3 +99,24 @@ export interface PrayerStep {
   /** Seções agrupadas (fechamento das Santas Chagas). */
   sections?: PrayerSection[];
 }
+
+/** Uma passagem bíblica da liturgia do dia (leitura, salmo ou evangelho). */
+export interface LiturgyPassage {
+  referencia: string;
+  titulo?: string;
+  refrao?: string;
+  texto: string;
+}
+
+/** Resposta da API pública de liturgia diária (liturgia.up.railway.app). */
+export interface DailyLiturgy {
+  data: string;
+  liturgia: string;
+  cor: string;
+  leituras: {
+    primeiraLeitura: LiturgyPassage[];
+    salmo: LiturgyPassage[];
+    segundaLeitura: LiturgyPassage[];
+    evangelho: LiturgyPassage[];
+  };
+}
