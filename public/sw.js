@@ -48,6 +48,13 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // APIs externas sensíveis à data (ex.: liturgia diária): sempre direto da rede,
+  // nunca cacheadas, para não devolver o conteúdo de um dia anterior.
+  if (new URL(url).origin !== self.location.origin && !STATIC_ASSETS.includes(url)) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+
   // Assets (JS/CSS/images): Stale-While-Revalidate
   event.respondWith(
     caches.open(CACHE_NAME).then(async (cache) => {

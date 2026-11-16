@@ -2,37 +2,26 @@ import { useCallback, useEffect, useState } from 'react';
 import type { DailyLiturgy } from '@/types';
 import { fetchDailyLiturgy } from '@/services/dailyLiturgyApi';
 
-const CACHE_KEY = 'chaplet.dailyLiturgy';
+const CACHE_PREFIX = 'chaplet.dailyLiturgy.';
 
-interface Cache {
-  key: string;
-  data: DailyLiturgy;
-}
-
-function todayKey(): string {
-  const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(
-    d.getDate(),
+export function dateKey(date: Date): string {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(
+    date.getDate(),
   ).padStart(2, '0')}`;
 }
 
-function readCache(): DailyLiturgy | null {
+function readCache(key: string): DailyLiturgy | null {
   try {
-    const raw = window.localStorage.getItem(CACHE_KEY);
-    if (!raw) return null;
-    const cached = JSON.parse(raw) as Cache;
-    return cached.key === todayKey() ? cached.data : null;
+    const raw = window.localStorage.getItem(CACHE_PREFIX + key);
+    return raw ? (JSON.parse(raw) as DailyLiturgy) : null;
   } catch {
     return null;
   }
 }
 
-function writeCache(data: DailyLiturgy) {
+function writeCache(key: string, data: DailyLiturgy) {
   try {
-    window.localStorage.setItem(
-      CACHE_KEY,
-      JSON.stringify({ key: todayKey(), data }),
-    );
+    window.localStorage.setItem(CACHE_PREFIX + key, JSON.stringify(data));
   } catch {
     /* ignora erros de cota / modo privado */
   }
@@ -46,17 +35,23 @@ interface DailyLiturgyState {
 }
 
 /**
- * Busca a liturgia do dia (leituras da Missa) de uma API pública,
- * com cache em localStorage por dia para evitar refetch e permitir
- * reabrir o painel offline no mesmo dia.
+ * Busca a liturgia (leituras da Missa) de uma data específica, numa API
+ * pública, com cache em localStorage por data para evitar refetch e
+ * permitir reabrir o painel offline no mesmo dia.
  */
-export function useDailyLiturgy(enabled: boolean): DailyLiturgyState {
-  const [data, setData] = useState<DailyLiturgy | null>(readCache);
+export function useDailyLiturgy(enabled: boolean, date: Date): DailyLiturgyState {
+  const key = dateKey(date);
+  const [data, setData] = useState<DailyLiturgy | null>(() => readCache(key));
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [attempt, setAttempt] = useState(0);
 
   const reload = useCallback(() => setAttempt((n) => n + 1), []);
+
+  useEffect(() => {
+    setData(readCache(key));
+    setError(null);
+  }, [key]);
 
   useEffect(() => {
     if (!enabled || data) return;
@@ -65,17 +60,17 @@ export function useDailyLiturgy(enabled: boolean): DailyLiturgyState {
     setLoading(true);
     setError(null);
 
-    fetchDailyLiturgy(controller.signal)
+    fetchDailyLiturgy(date, controller.signal)
       .then((result) => {
         setData(result);
-        writeCache(result);
+        writeCache(key, result);
       })
       .catch((err: unknown) => {
         if (controller.signal.aborted) return;
         setError(
           err instanceof Error
             ? err.message
-            : 'Não foi possível carregar a liturgia de hoje.',
+            : 'Não foi possível carregar a liturgia.',
         );
       })
       .finally(() => {
@@ -83,7 +78,7 @@ export function useDailyLiturgy(enabled: boolean): DailyLiturgyState {
       });
 
     return () => controller.abort();
-  }, [enabled, data, attempt]);
+  }, [enabled, data, attempt, key, date]);
 
   return { data, loading, error, reload };
 }

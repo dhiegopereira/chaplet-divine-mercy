@@ -235,6 +235,32 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.liturgy-date-picker {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.liturgy-date-picker input[type='date'] {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-soft);
+  background: var(--prayer-bg);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+}
+
+.liturgy-today-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
 .liturgy-retry-btn {
   padding: 0.5rem 1rem;
   border-radius: 999px;

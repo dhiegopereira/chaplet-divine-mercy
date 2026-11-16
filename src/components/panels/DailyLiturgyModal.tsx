@@ -1,5 +1,6 @@
+import { useEffect, useState } from 'react';
 import type { LiturgyPassage } from '@/types';
-import { useDailyLiturgy } from '@/hooks/useDailyLiturgy';
+import { dateKey, useDailyLiturgy } from '@/hooks/useDailyLiturgy';
 
 interface DailyLiturgyModalProps {
   open: boolean;
@@ -12,6 +13,11 @@ const SECTIONS: { key: 'primeiraLeitura' | 'salmo' | 'segundaLeitura' | 'evangel
   { key: 'segundaLeitura', title: 'Segunda Leitura' },
   { key: 'evangelho', title: 'Evangelho' },
 ];
+
+function parseInputDate(value: string): Date {
+  const [year, month, day] = value.split('-').map(Number);
+  return new Date(year, month - 1, day);
+}
 
 function Passage({ passage }: { passage: LiturgyPassage }) {
   return (
@@ -28,13 +34,21 @@ function Passage({ passage }: { passage: LiturgyPassage }) {
   );
 }
 
-/** Modal com as leituras da Missa do dia, buscadas de uma API pública. */
+/** Modal com as leituras da Missa de um dia escolhido, buscadas de uma API pública. */
 export default function DailyLiturgyModal({
   open,
   onClose,
 }: DailyLiturgyModalProps) {
-  const { data, loading, error, reload } = useDailyLiturgy(open);
+  const [selectedDate, setSelectedDate] = useState(() => new Date());
+
+  useEffect(() => {
+    if (open) setSelectedDate(new Date());
+  }, [open]);
+
+  const { data, loading, error, reload } = useDailyLiturgy(open, selectedDate);
   if (!open) return null;
+
+  const isToday = dateKey(selectedDate) === dateKey(new Date());
 
   return (
     <div className="liturgy-modal active" onClick={onClose}>
@@ -46,7 +60,26 @@ export default function DailyLiturgyModal({
           </button>
         </div>
         <div className="liturgy-modal-body">
-          {loading && <p>Carregando as leituras de hoje…</p>}
+          <div className="liturgy-date-picker">
+            <input
+              type="date"
+              value={dateKey(selectedDate)}
+              onChange={(e) => {
+                if (e.target.value) setSelectedDate(parseInputDate(e.target.value));
+              }}
+            />
+            {!isToday && (
+              <button
+                type="button"
+                className="liturgy-today-btn"
+                onClick={() => setSelectedDate(new Date())}
+              >
+                Hoje
+              </button>
+            )}
+          </div>
+
+          {loading && <p>Carregando as leituras…</p>}
 
           {error && (
             <div className="liturgy-section">
